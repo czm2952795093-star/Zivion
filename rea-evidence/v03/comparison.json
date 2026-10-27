@@ -1,0 +1,454 @@
+{
+  "provenance": "Original unmodified APK public-copy text, REA native screen captures. Inferred year-based auxiliary rules; v0.2 dates used for development, ten new dates for validation.",
+  "totals": {
+    "development": {
+      "samples": 12,
+      "originalStars": 840,
+      "oldPositions": 756,
+      "newPositions": 840,
+      "oldExtra": 36,
+      "newExtra": 0,
+      "brightness": 498,
+      "palaces": 144,
+      "stems": 144,
+      "decadals": 144,
+      "major": 168,
+      "transforms": 576
+    },
+    "validation": {
+      "samples": 10,
+      "originalStars": 700,
+      "oldPositions": 630,
+      "newPositions": 700,
+      "oldExtra": 30,
+      "newExtra": 0,
+      "brightness": 310,
+      "palaces": 120,
+      "stems": 120,
+      "decadals": 120,
+      "major": 140,
+      "transforms": 480
+    }
+  },
+  "samples": [
+    {
+      "key": "19651123030000-1",
+      "role": "development",
+      "year": "1965",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 38,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19730314120000-2",
+      "role": "development",
+      "year": "1973",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 40,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19780805070000-1",
+      "role": "development",
+      "year": "1978",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 31,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19840321143000-1",
+      "role": "development",
+      "year": "1984",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 40,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19881230110000-1",
+      "role": "development",
+      "year": "1988",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 61,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19930106023000-2",
+      "role": "development",
+      "year": "1992",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 40,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19950715083000-1",
+      "role": "development",
+      "year": "1995",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 45,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20000229120000-2",
+      "role": "development",
+      "year": "2000",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 44,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20031118214500-2",
+      "role": "development",
+      "year": "2003",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 47,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20070520160000-1",
+      "role": "development",
+      "year": "2007",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 26,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20120612180000-2",
+      "role": "development",
+      "year": "2012",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 41,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20240108153000-2",
+      "role": "development",
+      "year": "2023",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 45,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19840714013000-1",
+      "role": "validation",
+      "year": "1984",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 22,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19850714033000-2",
+      "role": "validation",
+      "year": "1985",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 37,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19860714053000-1",
+      "role": "validation",
+      "year": "1986",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 34,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19870714073000-2",
+      "role": "validation",
+      "year": "1987",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 32,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19880714093000-1",
+      "role": "validation",
+      "year": "1988",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 44,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19890714113000-2",
+      "role": "validation",
+      "year": "1989",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 29,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19900714133000-1",
+      "role": "validation",
+      "year": "1990",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 26,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19910714153000-2",
+      "role": "validation",
+      "year": "1991",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 31,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19920714173000-1",
+      "role": "validation",
+      "year": "1992",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 62,
+        "newPositions": 70,
+        "oldExtra": 4,
+        "newExtra": 0,
+        "brightness": 31,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19930714193000-2",
+      "role": "validation",
+      "year": "1993",
+      "scores": {
+        "originalStars": 70,
+        "oldPositions": 64,
+        "newPositions": 70,
+        "oldExtra": 2,
+        "newExtra": 0,
+        "brightness": 24,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    }
+  ],
+  "limits": "These checks do not establish all-time parity, brightness equivalence, transformation strength or flow-period features."
+}

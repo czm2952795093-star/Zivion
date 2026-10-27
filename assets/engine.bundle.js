@@ -20591,12 +20591,63 @@ var ZiweiEngine = (() => {
     }
   });
 
+  // work/calculation-engine/auxiliary-rules.js
+  var require_auxiliary_rules = __commonJS({
+    "work/calculation-engine/auxiliary-rules.js"(exports, module) {
+      var BRANCH = "\u5B50\u4E11\u5BC5\u536F\u8FB0\u5DF3\u5348\u672A\u7533\u9149\u620C\u4EA5";
+      var STEM = "\u7532\u4E59\u4E19\u4E01\u620A\u5DF1\u5E9A\u8F9B\u58EC\u7678";
+      function applyAuxiliaryRules(palaces, yearStem, yearBranch, brightnessFor) {
+        const stem = STEM.indexOf(yearStem), branch = BRANCH.indexOf(yearBranch);
+        if (stem < 0 || branch < 0) throw Error("\u751F\u5E74\u5E72\u652F\u65E0\u6548");
+        function remove(name) {
+          let type = "adjective";
+          for (const p of Object.values(palaces)) {
+            if (name in p["\u661F\u5217\u8868"]) type = p["\u661F\u5217\u8868"][name];
+            delete p["\u661F\u5217\u8868"][name];
+            delete p["\u661F\u5E99\u65FA"][name];
+            delete p["\u751F\u5E74\u56DB\u5316"][name];
+          }
+          return type;
+        }
+        function place(name, index, type = "adjective") {
+          const b = BRANCH[(index + 12) % 12], p = palaces[b];
+          p["\u661F\u5217\u8868"][name] = type;
+          p["\u661F\u5E99\u65FA"][name] = { "\u5E99\u65FA": brightnessFor(name, b) };
+        }
+        remove("\u622A\u8DEF");
+        remove("\u7A7A\u4EA1");
+        const emptyBase = 8 - 2 * (stem % 5);
+        place("\u622A\u7A7A", emptyBase + stem % 2);
+        place("\u526F\u622A", emptyBase + 1 - stem % 2);
+        const voidBase = (branch - stem + 22) % 12;
+        place("\u526F\u65EC", voidBase + 1 - stem % 2);
+        place("\u9F99\u5FB7", branch + 7);
+        place("\u5927\u8017", branch + (branch % 2 ? 5 : 7));
+        place("\u52AB\u715E", [5, 2, 11, 8][branch % 4]);
+        const kui = "\u4E11\u5B50\u4EA5\u9149\u5BC5\u7533\u672A\u5348\u5DF3\u536F", yue = "\u672A\u7533\u9149\u4EA5\u5348\u5B50\u4E11\u5BC5\u536F\u5DF3";
+        for (const [name, target] of [["\u5929\u9B41", kui[stem]], ["\u5929\u94BA", yue[stem]]]) {
+          const type = remove(name);
+          place(name, BRANCH.indexOf(target), type);
+        }
+        for (const p of Object.values(palaces)) {
+          const priority = (t) => t === "major" ? 0 : ["soft", "tough"].includes(t) ? 1 : 2;
+          const ordered = {};
+          for (const [name, type] of Object.entries(p["\u661F\u5217\u8868"]).sort((a, b) => priority(a[1]) - priority(b[1]))) ordered[name] = type;
+          p["\u661F\u5217\u8868"] = ordered;
+        }
+      }
+      module.exports = { applyAuxiliaryRules };
+    }
+  });
+
   // work/calculation-engine/engine.js
   var require_engine = __commonJS({
     "work/calculation-engine/engine.js"(exports, module) {
       var { astro, util } = require_lib2();
       var { Solar, Lunar } = require_dist();
       var observedBrightness = require_observed_brightness().values;
+      var { applyAuxiliaryRules } = require_auxiliary_rules();
+      var BRANCH = "\u5B50\u4E11\u5BC5\u536F\u8FB0\u5DF3\u5348\u672A\u7533\u9149\u620C\u4EA5";
       var STEM = "\u7532\u4E59\u4E19\u4E01\u620A\u5DF1\u5E9A\u8F9B\u58EC\u7678";
       function equationMinutes(date) {
         const t = (date.getTime() / 864e5 + 24405875e-1 - 2451545) / 36525;
@@ -20655,6 +20706,10 @@ var ZiweiEngine = (() => {
           });
           palaces[p2.earthlyBranch] = { "\u5BAB\u5E72": p2.heavenlyStem, "\u5BAB": p2.name, "\u5927\u9650": p2.decadal.range.join("~"), "\u5C0F\u9650": p2.ages.join(","), "\u661F\u5217\u8868": list, "\u661F\u5E99\u65FA": brightness, "\u751F\u5E74\u56DB\u5316": birth, "\u56DB\u5316": transformations, "\u751F\u5E74\u535A\u58EB": p2.boshi12, "\u751F\u5E74\u5C06\u524D": p2.jiangqian12, "\u751F\u5E74\u5C81\u524D": p2.suiqian12, "\u957F\u751F": p2.changsheng12 };
         }
+        if (options.auxiliaryRules !== false) applyAuxiliaryRules(palaces, a.rawDates.chineseDate.yearly[0], a.rawDates.chineseDate.yearly[1], (star, branch) => {
+          const key = star + "|" + branch;
+          return options.observedBrightness !== false && Object.prototype.hasOwnProperty.call(observedBrightness, key) ? observedBrightness[key] : util.getBrightness(star, (BRANCH.indexOf(branch) + 10) % 12) || "";
+        });
         return { "\u5176\u4ED6\u4FE1\u606F": info, "\u5341\u4E8C\u5BAB\u4FE1\u606F": palaces };
       }
       function safely(input) {
