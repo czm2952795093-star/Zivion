@@ -40,3 +40,15 @@ java -cp "tests/classes;tests/json-20240303.jar" FlowSelectionTest tests/flow-v0
 ```
 
 预期PASS486：新增原版6个状态、48次来源选择、不移动叠宫、不改写原始数据以及无效选择。2组输入此前曾用于本命对照，本次采集的是新流运状态。原版截图与静态依据索引见rea-evidence/v09/flow-observations.json，安装包交互检查见flow-ui-test.json。0.8的1385项检查继续通过；本命引擎字节未变，沿用0.8已有84组结构和56份本命对照结果。
+
+## 0.10.0：流月月序
+
+```powershell
+node tests/generate-month-fixtures.js
+javac --release 8 -encoding UTF-8 -cp tests/json-20240303.jar -d tests/classes src/local/ziweixingyu/rebuild/FlowState.java src/local/ziweixingyu/rebuild/MonthState.java tests/MonthStateTest.java
+java -cp "tests/classes;tests/json-20240303.jar" MonthStateTest tests/month-fixtures.json
+```
+
+预期PASS1238。固定月份位置/月干来自5个出生输入的7个原版年度截图状态（其中4个新截图、3个旧截图）；84项是月份标注，不是完整流月命盘。月宫旋转来自REA静态代码。月序边界、所选宫位四化来源、本命数据隔离、无效输入也被检查。原1385和486检查继续通过。原版证据索引在rea-evidence/v10/month-observations.json，安装包结果在month-ui-test.json。
+
+本命引擎与0.9.0字节一致；本轮没有重复运行全部56份本命对照，沿用已保存结果。新生成的month-fixtures.json只用于独立引擎输入，不是原版输出。

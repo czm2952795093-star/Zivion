@@ -1,0 +1,1 @@
+PASS 1385 checks; 6 observed flow states, 2 sexes x 120 ages; natal data unchanged

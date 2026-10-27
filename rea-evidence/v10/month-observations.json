@@ -1,0 +1,94 @@
+{
+  "originalApkSha256": "fb87cd02a3cea411b0a07b4ec69f361571f13333a191bccc0ae0b638a98e4985",
+  "scope": "Five birth inputs, seven annual states, twelve month placement/stem annotations each. Three earlier annual captures reused; four new captures. Not 84 complete monthly chart comparisons.",
+  "formula": "REA r(Canvas): B2=o(annualBranch,indexOf(birthHour)-birthLunarMonthCount). g(Canvas): month m at o(B2,m), labels rotate 父福田官友迁疾财子夫兄命. Month stem uses calendar year stem. Original o() advances 子丑寅卯辰巳午未申酉戌亥.",
+  "implementationBoundary": "MonthState derives birth month count from independent engine lunar month label; leap-birth case checked with fixLeap off. Selected monthly palace source uses previously established palace 四化, not calendar month stem. New four-mode UI and month picker are reconstruction choices. No leap month/date interval/flow-day support.",
+  "settings": "Gregorian UTC+8 longitude120 fixLeap off",
+  "staticEvidence": [
+    {
+      "path": "v10/original-month-setup.json",
+      "evidenceId": "ev_0a70457f7714d025ec641ac627c5cd27379ddfa3bca2dc05bf8fe51496f72783",
+      "sha256": "330a0216974bf57e6444c5b81d126d9b34caeed5f39ff8a575e28bfe5f6ca486"
+    },
+    {
+      "path": "v08/original-flow-render.json",
+      "evidenceId": "ev_a160fc6b027a8518f07b6b6996f5b41624aa2121d539201855b8f6644962dd6a",
+      "sha256": "752df8355157abb607aea42248e5b92749ad99f85684ca24bdbb9ddc225fe2f6"
+    },
+    {
+      "path": "v10/branch-step.json",
+      "evidenceId": "ev_2f46d7e76499647e03606e504f4999d44cfecc0d837385973266f8dc447282af",
+      "sha256": "c6954e4f8225cf7c876860557c6206e597623ade2a01d98af5d0be5a45b1d0bc"
+    },
+    {
+      "path": "v10/original-branch-order.json",
+      "evidenceId": "ev_1a609c3baf83f7a65f10db132cfbcd4af4c399c8edb6cd2ec8936500535253ee",
+      "sha256": "edcc683213cd7f38fdc2e581b1046c32c241a71f94f58047a8ce6a46491c6e0c"
+    }
+  ],
+  "states": [
+    {
+      "fixtureKey": "male1990",
+      "age": 39,
+      "firstMonthBranch": "寅",
+      "firstMonthStem": "壬",
+      "screenshot": "v08/original-1990-annual/screen.png",
+      "sha256": "218dfa11439d259902c7fb2809e9c5fdd8a08e353375d6f8e34266af4ed21aeb",
+      "evidenceId": "ev_c149e76cdaec2198048159906a73d98f98f48b7bdd5b025981c1b8db123811b5"
+    },
+    {
+      "fixtureKey": "female1968",
+      "age": 60,
+      "firstMonthBranch": "未",
+      "firstMonthStem": "壬",
+      "screenshot": "v09/19680423043000-annual/screen.png",
+      "sha256": "6f0d581794f866dbff34ed07318fc7d50b368f1df5db33061d811fcdd0fbde93",
+      "evidenceId": "ev_0de53a065f3399be2f346ae04dcb5908c631270134ec6473151647dfd345ed6a"
+    },
+    {
+      "fixtureKey": "male2001",
+      "age": 27,
+      "firstMonthBranch": "午",
+      "firstMonthStem": "壬",
+      "screenshot": "v09/20011104143000-annual/screen.png",
+      "sha256": "8e052fe2a09536dc2de0bf4cbb78741d14d20cf5c9eac514a36aece2079b9432",
+      "evidenceId": "ev_dcd6945c79d9b5c68c8d62e2b19d8913af6e56574acd856237141cf5fd5215ad"
+    },
+    {
+      "fixtureKey": "male2000",
+      "age": 28,
+      "firstMonthBranch": "未",
+      "firstMonthStem": "壬",
+      "screenshot": "v10/20000229233000-annual/screen.png",
+      "sha256": "5f3ab9cffb77fa73292b2fa36c28e2dac98874412d45a27895f8a022bca756bb",
+      "evidenceId": "ev_0f5ccb87b8de49062e13350f207bca2a2ccd7fc0995572c193cc39fce4802bd5"
+    },
+    {
+      "fixtureKey": "male2000",
+      "age": 29,
+      "firstMonthBranch": "申",
+      "firstMonthStem": "甲",
+      "screenshot": "v10/20000229233000-next-year/screen.png",
+      "sha256": "1ab37ce857ebbde2c6521e10d8394aabc0539b802908f9e2b6064beb909ebfe1",
+      "evidenceId": "ev_efd9027802870518c6c29644c7bd0f1aebd89020c3127c569daad20440f84757"
+    },
+    {
+      "fixtureKey": "female2012",
+      "age": 16,
+      "firstMonthBranch": "丑",
+      "firstMonthStem": "壬",
+      "screenshot": "v10/20120612180000-annual/screen.png",
+      "sha256": "8741c59357a4b3c329f94a166359a6715cedd03ac9c025f2af03637d43346389",
+      "evidenceId": "ev_4735d7f565b42da31d2103422ee5bc383725eb97f95c1a05a6013e22b872302d"
+    },
+    {
+      "fixtureKey": "female2012",
+      "age": 17,
+      "firstMonthBranch": "寅",
+      "firstMonthStem": "甲",
+      "screenshot": "v10/20120612180000-next-year/screen.png",
+      "sha256": "b1efc4376952b7e868a644b79c7e17c9ba90ac2baff9bd1a330e133176673dfb",
+      "evidenceId": "ev_acdc14917719a87a1dd81e0fc472714260e07390309d35ac415e79ccdb562d72"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "inputs": [
+    [
+      "20000229233000",
+      1
+    ],
+    [
+      "20120612180000",
+      2
+    ]
+  ],
+  "purpose": "Check all twelve month labels in original annual and next annual. First covers late hour; second leap lunar month, fixLeap off. Selected before runtime capture."
+}

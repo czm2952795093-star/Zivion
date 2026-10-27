@@ -1,0 +1,7 @@
+{
+  "status": "in_progress",
+  "checks": [
+    "changing month clears previous palace selection and uses new month anchor",
+    "monthly mode retains annual and decadal context and dropdown reaches first month"
+  ]
+}
