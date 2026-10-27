@@ -1,0 +1,13 @@
+build/
+node_modules/
+__pycache__/
+*.pyc
+*.apk
+*.keystore
+*.jks
+*.key
+*.pem
+.env
+.env.*
+local.properties
+.DS_Store

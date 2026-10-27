@@ -1,0 +1,22 @@
+{
+  "原版命盘.png": {
+    "bytes": 290884,
+    "sha256": "e3c74228ca6c5b8c0b60138fa130cb5d4eecfc983b137e77bd69de9dcdc6f694"
+  },
+  "复刻命盘.png": {
+    "bytes": 229623,
+    "sha256": "8e516f3b30bce89469935c798dfa4ab1633e2c1f95c6d8cd7df3eaf30def035f"
+  },
+  "复刻输入页.png": {
+    "bytes": 90673,
+    "sha256": "39ae2c9cecbaa8aabf87dffffec224464200b84ced98dde5234d28445f77adf1"
+  },
+  "紫微星语-复刻源码-0.1.0.zip": {
+    "bytes": 228875,
+    "sha256": "f541e0e6a4ba1f8424276621ca1d4f3a83c562f549bbcad5c7adcc62264603c8"
+  },
+  "紫微星语-复刻验证版-0.1.0.apk": {
+    "bytes": 229981,
+    "sha256": "425aa46f26757450d20e8cad254881a39d88e1376b10266b3ddcbc73e3c1762f"
+  }
+}

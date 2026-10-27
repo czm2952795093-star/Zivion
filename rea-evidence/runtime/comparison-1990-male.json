@@ -1,0 +1,349 @@
+{
+  "sample": "1990-01-01 12:00:00 UTC+8, longitude 120E, male",
+  "provenance": "Original app public copy-chart action, local emulator; supplemental ADB clipboard extraction; original screenshot captured by REA",
+  "matches": {
+    "palaceNames": 12,
+    "stems": 12,
+    "decadals": 12,
+    "majorPositions": 14,
+    "transformations": 48
+  },
+  "expected": {
+    "palaceNames": 12,
+    "stems": 12,
+    "decadals": 12,
+    "majorPositions": 14,
+    "transformations": 48
+  },
+  "brightnessCompared": 62,
+  "brightnessDifferent": 46,
+  "solarTime": {
+    "original": "11:56:38",
+    "rebuilt": "1990-01-01 11:56:37",
+    "differenceSeconds": 1
+  },
+  "differences": [
+    {
+      "branch": "子",
+      "star": "天姚",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "子",
+      "star": "天才",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "子",
+      "star": "天寿",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "子",
+      "star": "天伤",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "子",
+      "missing": [
+        "天钺",
+        "龙德"
+      ],
+      "extra": [
+        "天魁"
+      ]
+    },
+    {
+      "branch": "丑",
+      "star": "天机",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": "陷"
+    },
+    {
+      "branch": "丑",
+      "star": "天贵",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "丑",
+      "star": "华盖",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "丑",
+      "star": "天哭",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "寅",
+      "star": "紫微",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": "旺"
+    },
+    {
+      "branch": "寅",
+      "star": "天福",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "寅",
+      "star": "天德",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "寅",
+      "star": "天使",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "寅",
+      "missing": [
+        "劫煞"
+      ],
+      "extra": []
+    },
+    {
+      "branch": "卯",
+      "star": "左辅",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "辰",
+      "star": "贪狼",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": "庙"
+    },
+    {
+      "branch": "辰",
+      "star": "文昌",
+      "originalBrightness": "利",
+      "rebuiltBrightness": "得"
+    },
+    {
+      "branch": "辰",
+      "star": "铃星",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": "陷"
+    },
+    {
+      "branch": "辰",
+      "star": "天喜",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "辰",
+      "star": "寡宿",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "巳",
+      "star": "巨门",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": "旺"
+    },
+    {
+      "branch": "巳",
+      "star": "地空",
+      "originalBrightness": "不",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "巳",
+      "star": "地劫",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "巳",
+      "star": "陀罗",
+      "originalBrightness": "",
+      "rebuiltBrightness": "陷"
+    },
+    {
+      "branch": "巳",
+      "star": "凤阁",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "巳",
+      "star": "年解",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "午",
+      "star": "廉贞",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": "平"
+    },
+    {
+      "branch": "午",
+      "star": "天相",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": "庙"
+    },
+    {
+      "branch": "午",
+      "star": "禄存",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "午",
+      "star": "咸池",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "午",
+      "star": "解神",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "午",
+      "star": "天空",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "未",
+      "star": "擎羊",
+      "originalBrightness": "平",
+      "rebuiltBrightness": "庙"
+    },
+    {
+      "branch": "未",
+      "star": "三台",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "未",
+      "star": "八座",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "未",
+      "star": "恩光",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "申",
+      "star": "孤辰",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "申",
+      "star": "天刑",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "申",
+      "missing": [
+        "天魁",
+        "副截"
+      ],
+      "extra": [
+        "天钺",
+        "截路"
+      ]
+    },
+    {
+      "branch": "酉",
+      "star": "天同",
+      "originalBrightness": "旺",
+      "rebuiltBrightness": "平"
+    },
+    {
+      "branch": "酉",
+      "star": "火星",
+      "originalBrightness": "平",
+      "rebuiltBrightness": "得"
+    },
+    {
+      "branch": "酉",
+      "star": "龙池",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "酉",
+      "star": "天官",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "酉",
+      "star": "破碎",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "酉",
+      "missing": [
+        "截空"
+      ],
+      "extra": [
+        "空亡"
+      ]
+    },
+    {
+      "branch": "戌",
+      "star": "红鸾",
+      "originalBrightness": "陷",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "戌",
+      "missing": [
+        "大耗",
+        "副旬"
+      ],
+      "extra": []
+    },
+    {
+      "branch": "亥",
+      "star": "右弼",
+      "originalBrightness": "庙",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "亥",
+      "star": "天马",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "亥",
+      "star": "旬空",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    },
+    {
+      "branch": "亥",
+      "star": "天虚",
+      "originalBrightness": "平",
+      "rebuiltBrightness": ""
+    }
+  ],
+  "limitations": "One sample only. Match does not prove all dates, edge cases, brightness, auxiliary stars or proprietary strength percentages are equivalent."
+}
