@@ -1,0 +1,63 @@
+{
+  "originalApkSha256": "fb87cd02a3cea411b0a07b4ec69f361571f13333a191bccc0ae0b638a98e4985",
+  "input": "Gregorian 1990-01-01 12:00:00, longitude120, UTC+8, fixLeap off",
+  "method": "REA screenshot manual inspection plus zwpview.g(Canvas), zwpview.a(Canvas), x1.y2.a(). Fixed expected labels and transformations in tests/FlowStateTest.java. Generated flow-fixtures.json is independent-engine input, not original evidence. Six development states, no held-out flow sample.",
+  "importantFinding": "Annual transformations use natal palace at annual anchor, not calendar-year stem. Original copy text is natal only.",
+  "cases": [
+    {
+      "sex": "male",
+      "mode": "decadal",
+      "age": 39,
+      "anchor": "辰",
+      "transformationStem": "戊",
+      "screenshot": "original-1-decadal-current/screen.png",
+      "screenshotSha256": "8650638cf4f05fbc1b613fdf11a69467ce0f5c67af08ef963f9f45e2e03ee9ac"
+    },
+    {
+      "sex": "male",
+      "mode": "decadal",
+      "age": 26,
+      "anchor": "巳",
+      "transformationStem": "己",
+      "screenshot": "original-male-decadal-next/screen.png",
+      "screenshotSha256": "73967482ce34c0f876b0dca6c65582bcc762a316253f0e4c90066efac4aa8651"
+    },
+    {
+      "sex": "female",
+      "mode": "decadal",
+      "age": 39,
+      "anchor": "戌",
+      "transformationStem": "甲",
+      "screenshot": "original-2-decadal-current/screen.png",
+      "screenshotSha256": "ba366b859f987ceeb016c4f62306b0d636af595b91503b86241dca16c222587c"
+    },
+    {
+      "sex": "male",
+      "mode": "annual",
+      "age": 39,
+      "anchor": "未",
+      "transformationStem": "辛",
+      "screenshot": "original-1990-annual/screen.png",
+      "screenshotSha256": "218dfa11439d259902c7fb2809e9c5fdd8a08e353375d6f8e34266af4ed21aeb"
+    },
+    {
+      "sex": "male",
+      "mode": "annual",
+      "age": 26,
+      "anchor": "午",
+      "transformationStem": "庚",
+      "screenshot": "original-male-annual-next/screen.png",
+      "screenshotSha256": "670d208a0639717f896e575243c49378797928facd527a74d5fdf5ae95c6961b"
+    },
+    {
+      "sex": "female",
+      "mode": "annual",
+      "age": 39,
+      "anchor": "未",
+      "transformationStem": "辛",
+      "screenshot": "original-female-annual-current/screen.png",
+      "screenshotSha256": "acfb548d365fb4a86d56225558d14654f6fe016efe1852fdb4c00acb8f650f0a"
+    }
+  ],
+  "gestureObservation": "Male39 decadal + tap moved to age26, 己巳, 2014; this is retained as observed, not relabeled45. Replica buttons step periods in chronological age order instead. Original default39/year2027 occurred on emulator2026."
+}

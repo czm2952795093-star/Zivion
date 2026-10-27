@@ -1,0 +1,37 @@
+{
+  "development": {
+    "samples": 50,
+    "stars": 3500,
+    "positions": 3500,
+    "extra": 0,
+    "brightness": 3208,
+    "palaces": 600,
+    "stems": 600,
+    "decadals": 600,
+    "major": 700,
+    "transforms": 2400,
+    "strengthBeforeKnown": 2131,
+    "strengthTotal": 2400,
+    "strengthKnown": 2400,
+    "strengthMatch": 2400,
+    "strengthUnknown": 0
+  },
+  "holdout": {
+    "samples": 6,
+    "stars": 420,
+    "positions": 420,
+    "extra": 0,
+    "brightness": 371,
+    "palaces": 72,
+    "stems": 72,
+    "decadals": 72,
+    "major": 84,
+    "transforms": 288,
+    "strengthBeforeKnown": 282,
+    "strengthTotal": 288,
+    "strengthKnown": 288,
+    "strengthMatch": 288,
+    "strengthUnknown": 0
+  }
+}
+PASS56 charts structural regression; observed strengths match; table frozen before6 holdouts; unknown is not zero

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "environment": "Android 9 / API28 x86_64, 720x1280, offline",
+  "checks": [
+    "saved charts and notes retained through update",
+    "new chart defaults to natal mode",
+    "male age39 decadal title and four transformations",
+    "decadal next/previous selects period start",
+    "annual palace stem is independent from calendar stem",
+    "annual age steps one year",
+    "invalid ages leave active flow unchanged",
+    "mode and age changes do not modify stored records or preferences",
+    "copy preserves natal chart and appends selected flow",
+    "central dial cycles natal / decadal / annual",
+    "before first decadal period still permits annual mode",
+    "female direction and new chart reset",
+    "saved charts and notes unchanged after flow tests"
+  ]
+}
