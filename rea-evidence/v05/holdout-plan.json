@@ -1,0 +1,30 @@
+{
+  "fixedBeforeCollection": true,
+  "samples": [
+    [
+      "19760317063000",
+      1
+    ],
+    [
+      "19870825213000",
+      2
+    ],
+    [
+      "19951109143000",
+      1
+    ],
+    [
+      "20080503103000",
+      2
+    ],
+    [
+      "20170927183000",
+      1
+    ],
+    [
+      "20300615163000",
+      2
+    ]
+  ],
+  "rules": "Freeze552-pair table before reading these results; do not use them to expand table in this release."
+}

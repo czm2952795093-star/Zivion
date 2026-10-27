@@ -1,0 +1,1906 @@
+{
+  "source": "36 previous original charts reused for development;6 new dates declared before collection as held-out verification;552-pair table frozen before holdout collection.",
+  "totals": {
+    "development": {
+      "samples": 36,
+      "stars": 2520,
+      "positions": 2520,
+      "extra": 0,
+      "brightnessBefore": 1273,
+      "brightnessAfter": 2409,
+      "mapped": 2375,
+      "mappedConflicts": 0,
+      "palaces": 432,
+      "stems": 432,
+      "decadals": 432,
+      "major": 504,
+      "transforms": 1728
+    },
+    "holdout": {
+      "samples": 6,
+      "stars": 420,
+      "positions": 420,
+      "extra": 0,
+      "brightnessBefore": 184,
+      "brightnessAfter": 357,
+      "mapped": 340,
+      "mappedConflicts": 0,
+      "palaces": 72,
+      "stems": 72,
+      "decadals": 72,
+      "major": 84,
+      "transforms": 288
+    }
+  },
+  "samples": [
+    {
+      "key": "19651123030000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 38,
+        "brightnessAfter": 69,
+        "mapped": 69,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "卯",
+          "star": "天才",
+          "expected": "旺",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19730314120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 40,
+        "brightnessAfter": 69,
+        "mapped": 69,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "午",
+          "star": "天贵",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19780805070000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 31,
+        "brightnessAfter": 61,
+        "mapped": 60,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "天使",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "子",
+          "star": "旬空",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "副旬",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "解神",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "天刑",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "右弼",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "未",
+          "star": "天姚",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "戌",
+          "star": "左辅",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "戌",
+          "star": "天伤",
+          "expected": "平",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19840321143000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 40,
+        "brightnessAfter": 67,
+        "mapped": 67,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "辰",
+          "star": "天贵",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "铃星",
+          "expected": "利",
+          "actual": "得"
+        },
+        {
+          "branch": "申",
+          "star": "恩光",
+          "expected": "平",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19881230110000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 61,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19930106023000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 40,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19950715083000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 45,
+        "brightnessAfter": 69,
+        "mapped": 69,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "寅",
+          "star": "天才",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20000229120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 44,
+        "brightnessAfter": 68,
+        "mapped": 68,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "申",
+          "star": "旬空",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "副旬",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20031118214500-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 47,
+        "brightnessAfter": 60,
+        "mapped": 55,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "地空",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "左辅",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "右弼",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "三台",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "八座",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "解神",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "天刑",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "铃星",
+          "expected": "庙",
+          "actual": "得"
+        },
+        {
+          "branch": "戌",
+          "star": "地劫",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "戌",
+          "star": "天姚",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20070520160000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 26,
+        "brightnessAfter": 68,
+        "mapped": 68,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "午",
+          "star": "副旬",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "未",
+          "star": "旬空",
+          "expected": "陷",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20120612180000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 41,
+        "brightnessAfter": 61,
+        "mapped": 54,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "廉贞",
+          "expected": "陷",
+          "actual": "平"
+        },
+        {
+          "branch": "子",
+          "star": "天相",
+          "expected": "旺",
+          "actual": "庙"
+        },
+        {
+          "branch": "卯",
+          "star": "天同",
+          "expected": "得",
+          "actual": "平"
+        },
+        {
+          "branch": "巳",
+          "star": "太阳",
+          "expected": "庙",
+          "actual": "旺"
+        },
+        {
+          "branch": "午",
+          "star": "旬空",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "未",
+          "star": "副旬",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "天府",
+          "expected": "旺",
+          "actual": "得"
+        },
+        {
+          "branch": "戌",
+          "star": "贪狼",
+          "expected": "旺",
+          "actual": "庙"
+        },
+        {
+          "branch": "亥",
+          "star": "巨门",
+          "expected": "庙",
+          "actual": "旺"
+        }
+      ]
+    },
+    {
+      "key": "20240108153000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 45,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19840714013000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 22,
+        "brightnessAfter": 65,
+        "mapped": 65,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "三台",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "天使",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "八座",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "天寿",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天伤",
+          "expected": "旺",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19850714033000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 37,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19860714053000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 34,
+        "brightnessAfter": 54,
+        "mapped": 50,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "天福",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "红鸾",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "天空",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "天哭",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "截空",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "天官",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "副截",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "龙池",
+          "expected": "不",
+          "actual": ""
+        },
+        {
+          "branch": "未",
+          "star": "天喜",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "天虚",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "凤阁",
+          "expected": "不",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "年解",
+          "expected": "不",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "天钺",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "大耗",
+          "expected": "不",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天魁",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天德",
+          "expected": "平",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19870714073000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 32,
+        "brightnessAfter": 69,
+        "mapped": 69,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "寅",
+          "star": "天寿",
+          "expected": "旺",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19880714093000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 44,
+        "brightnessAfter": 68,
+        "mapped": 68,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "巳",
+          "star": "八座",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "三台",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19890714113000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 29,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19900714133000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 26,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19910714153000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 31,
+        "brightnessAfter": 64,
+        "mapped": 63,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "寅",
+          "star": "天钺",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "副截",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "截空",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "天魁",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "陀罗",
+          "expected": "",
+          "actual": "陷"
+        },
+        {
+          "branch": "酉",
+          "star": "禄存",
+          "expected": "旺",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19920714173000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 31,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19930714193000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 24,
+        "brightnessAfter": 44,
+        "mapped": 36,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "紫微",
+          "expected": "庙",
+          "actual": "平"
+        },
+        {
+          "branch": "子",
+          "star": "文昌",
+          "expected": "利",
+          "actual": "得"
+        },
+        {
+          "branch": "子",
+          "star": "天喜",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "地空",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "龙池",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "凤阁",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "年解",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "破军",
+          "expected": "旺",
+          "actual": "得"
+        },
+        {
+          "branch": "寅",
+          "star": "文曲",
+          "expected": "庙",
+          "actual": "平"
+        },
+        {
+          "branch": "寅",
+          "star": "大耗",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "天虚",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "廉贞",
+          "expected": "庙",
+          "actual": "利"
+        },
+        {
+          "branch": "午",
+          "star": "贪狼",
+          "expected": "陷",
+          "actual": "旺"
+        },
+        {
+          "branch": "午",
+          "star": "红鸾",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "天德",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "未",
+          "star": "天同",
+          "expected": "陷",
+          "actual": "不"
+        },
+        {
+          "branch": "未",
+          "star": "巨门",
+          "expected": "陷",
+          "actual": "不"
+        },
+        {
+          "branch": "申",
+          "star": "武曲",
+          "expected": "庙",
+          "actual": "得"
+        },
+        {
+          "branch": "申",
+          "star": "天相",
+          "expected": "陷",
+          "actual": "庙"
+        },
+        {
+          "branch": "申",
+          "star": "铃星",
+          "expected": "庙",
+          "actual": "陷"
+        },
+        {
+          "branch": "酉",
+          "star": "太阳",
+          "expected": "利",
+          "actual": "平"
+        },
+        {
+          "branch": "酉",
+          "star": "天梁",
+          "expected": "旺",
+          "actual": "得"
+        },
+        {
+          "branch": "酉",
+          "star": "地劫",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "天哭",
+          "expected": "不",
+          "actual": ""
+        },
+        {
+          "branch": "戌",
+          "star": "天空",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天机",
+          "expected": "旺",
+          "actual": "平"
+        }
+      ]
+    },
+    {
+      "key": "19900101233000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 21,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19900102003000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 25,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20230121233000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 31,
+        "brightnessAfter": 69,
+        "mapped": 69,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "辰",
+          "star": "天才",
+          "expected": "陷",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20230124120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 37,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20230322120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 38,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20230405120000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 34,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20230406120000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 30,
+        "brightnessAfter": 69,
+        "mapped": 69,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "午",
+          "star": "恩光",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20230420120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 33,
+        "brightnessAfter": 65,
+        "mapped": 63,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "丑",
+          "star": "天才",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "天姚",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "左辅",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "右弼",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天刑",
+          "expected": "陷",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20240204120000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 35,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20240204180000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 35,
+        "brightnessAfter": 70,
+        "mapped": 69,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20240205120000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 35,
+        "brightnessAfter": 61,
+        "mapped": 56,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "寅",
+          "star": "廉贞",
+          "expected": "旺",
+          "actual": "庙"
+        },
+        {
+          "branch": "辰",
+          "star": "破军",
+          "expected": "庙",
+          "actual": "旺"
+        },
+        {
+          "branch": "巳",
+          "star": "天同",
+          "expected": "陷",
+          "actual": "庙"
+        },
+        {
+          "branch": "未",
+          "star": "太阳",
+          "expected": "庙",
+          "actual": "得"
+        },
+        {
+          "branch": "未",
+          "star": "太阴",
+          "expected": "陷",
+          "actual": "不"
+        },
+        {
+          "branch": "申",
+          "star": "贪狼",
+          "expected": "不",
+          "actual": "平"
+        },
+        {
+          "branch": "酉",
+          "star": "天机",
+          "expected": "不",
+          "actual": "旺"
+        },
+        {
+          "branch": "戌",
+          "star": "紫微",
+          "expected": "旺",
+          "actual": "得"
+        },
+        {
+          "branch": "戌",
+          "star": "天相",
+          "expected": "利",
+          "actual": "得"
+        }
+      ]
+    },
+    {
+      "key": "20240209233000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 39,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "20240210003000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 33,
+        "brightnessAfter": 69,
+        "mapped": 69,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "卯",
+          "star": "天贵",
+          "expected": "旺",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20240210120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 39,
+        "brightnessAfter": 70,
+        "mapped": 70,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": []
+    },
+    {
+      "key": "19760317063000-1",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 41,
+        "brightnessAfter": 59,
+        "mapped": 57,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "天福",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "子",
+          "star": "旬空",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "副旬",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "天才",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "截空",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "天官",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "八座",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "副截",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "天钺",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "三台",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天魁",
+          "expected": "旺",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19870825213000-2",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 29,
+        "brightnessAfter": 61,
+        "mapped": 56,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "地空",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "解神",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "天刑",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "天贵",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "右弼",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "未",
+          "star": "天姚",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "铃星",
+          "expected": "庙",
+          "actual": "得"
+        },
+        {
+          "branch": "戌",
+          "star": "左辅",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "戌",
+          "star": "地劫",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "19951109143000-1",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 38,
+        "brightnessAfter": 62,
+        "mapped": 61,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "左辅",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "右弼",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "天才",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "解神",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "铃星",
+          "expected": "利",
+          "actual": "得"
+        },
+        {
+          "branch": "巳",
+          "star": "天刑",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "恩光",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "天姚",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20080503103000-2",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 33,
+        "brightnessAfter": 62,
+        "mapped": 60,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "卯",
+          "star": "天姚",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "八座",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "左辅",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "旬空",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "未",
+          "star": "副旬",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "右弼",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "三台",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天刑",
+          "expected": "陷",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20170927183000-1",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 20,
+        "brightnessAfter": 53,
+        "mapped": 49,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "天喜",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "龙池",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "凤阁",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "丑",
+          "star": "年解",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "解神",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "大耗",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "右弼",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "天虚",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "卯",
+          "star": "天寿",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "天刑",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "红鸾",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "午",
+          "star": "天德",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "天姚",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "天才",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "酉",
+          "star": "天哭",
+          "expected": "不",
+          "actual": ""
+        },
+        {
+          "branch": "戌",
+          "star": "天空",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "左辅",
+          "expected": "庙",
+          "actual": ""
+        }
+      ]
+    },
+    {
+      "key": "20300615163000-2",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightnessBefore": 23,
+        "brightnessAfter": 60,
+        "mapped": 57,
+        "mappedConflicts": 0,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48
+      },
+      "differences": [
+        {
+          "branch": "子",
+          "star": "凤阁",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "子",
+          "star": "年解",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "寅",
+          "star": "龙池",
+          "expected": "平",
+          "actual": ""
+        },
+        {
+          "branch": "辰",
+          "star": "天虚",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "红鸾",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "巳",
+          "star": "大耗",
+          "expected": "陷",
+          "actual": ""
+        },
+        {
+          "branch": "未",
+          "star": "天德",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "申",
+          "star": "天哭",
+          "expected": "庙",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天喜",
+          "expected": "旺",
+          "actual": ""
+        },
+        {
+          "branch": "亥",
+          "star": "天空",
+          "expected": "平",
+          "actual": ""
+        }
+      ]
+    }
+  ],
+  "limits": "Counts include blank brightness labels. Limited Gregorian /120E /UTC+8 /fixLeap off; not all-date or full-app parity."
+}
