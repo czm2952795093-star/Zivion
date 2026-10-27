@@ -1,0 +1,31 @@
+{
+  "fixedBeforeCollection": true,
+  "samples": [
+    [
+      "19680423043000",
+      2
+    ],
+    [
+      "19771016123000",
+      1
+    ],
+    [
+      "19980308183000",
+      2
+    ],
+    [
+      "20040721163000",
+      1
+    ],
+    [
+      "20130719103000",
+      2
+    ],
+    [
+      "20321126083000",
+      1
+    ]
+  ],
+  "strengthTableSha256": "e5c47d823601dab246eae265030e1da48bccf35d04b0034df307919cdbf7e420",
+  "rule": "Frozen468-entry table before collection;6 new verification dates not used for development."
+}
