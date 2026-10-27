@@ -1,0 +1,80 @@
+{
+  "originalApkSha256": "fb87cd02a3cea411b0a07b4ec69f361571f13333a191bccc0ae0b638a98e4985",
+  "scope": "Six new flow states on two birth inputs previously used for natal comparison; not six new birth dates or universal flow parity. Dates chosen before original runtime capture; fixed expectations appear in FlowSelectionTest.java.",
+  "inputs": [
+    {
+      "date": "1968-04-23 04:30:00",
+      "sex": "female",
+      "age": 60,
+      "annualAnchor": "未",
+      "decadalAnchor": "酉",
+      "decadalRange": "52~61",
+      "selectedSource": "卯"
+    },
+    {
+      "date": "2001-11-04 14:30:00",
+      "sex": "male",
+      "age": 27,
+      "annualAnchor": "未",
+      "decadalAnchor": "丑",
+      "decadalRange": "23~32",
+      "selectedSource": "卯"
+    }
+  ],
+  "settings": "Gregorian UTC+8 longitude120 fixLeap off",
+  "evidence": [
+    {
+      "screenshot": "19680423043000-decadal/screen.png",
+      "sha256": "81530931a564b8c17ed04a8803bff10fceeff6884acbbfd6c544ecd41d7960f2",
+      "evidenceId": "ev_70f9e89d694118a6e9c38b223383d12867881e5a98054a8d4703089f63d9242a"
+    },
+    {
+      "screenshot": "19680423043000-annual/screen.png",
+      "sha256": "6f0d581794f866dbff34ed07318fc7d50b368f1df5db33061d811fcdd0fbde93",
+      "evidenceId": "ev_0de53a065f3399be2f346ae04dcb5908c631270134ec6473151647dfd345ed6a"
+    },
+    {
+      "screenshot": "19680423043000-selected-mao/screen.png",
+      "sha256": "856220b9c1ba533cabf8aa412b780c19ea2eb0732933a546bd9f64cd2c825683",
+      "evidenceId": "ev_efbe4af2fd70291eafef2fa64a4fd63e2e1bc82cf463dfb6cea1bbf6ff47f7a4"
+    },
+    {
+      "screenshot": "20011104143000-decadal/screen.png",
+      "sha256": "7895b706cdcaced43c861080133e06af67d4ec2c213443454922b304c280221a",
+      "evidenceId": "ev_5f67209e76e8ce8bb6702c7334d2c1a363c0b47ea8370152b6b561d4748b67b8"
+    },
+    {
+      "screenshot": "20011104143000-annual/screen.png",
+      "sha256": "8e052fe2a09536dc2de0bf4cbb78741d14d20cf5c9eac514a36aece2079b9432",
+      "evidenceId": "ev_dcd6945c79d9b5c68c8d62e2b19d8913af6e56574acd856237141cf5fd5215ad"
+    },
+    {
+      "screenshot": "20011104143000-selected-mao/screen.png",
+      "sha256": "cd896f4d5cca0f1796b3632c4e384b4c49e42888ca0eabb380127198dd09ad9a",
+      "evidenceId": "ev_8a4d4c7f25ec1b51ba024366fc01519e815fac9da6384b75416f9288dcac3ab7"
+    }
+  ],
+  "staticBasis": [
+    {
+      "path": "../v08/original-flow-render.json",
+      "evidenceId": "ev_a160fc6b027a8518f07b6b6996f5b41624aa2121d539201855b8f6644962dd6a",
+      "sha256": "752df8355157abb607aea42248e5b92749ad99f85684ca24bdbb9ddc225fe2f6"
+    },
+    {
+      "path": "../v08/original-center-render.json",
+      "evidenceId": "ev_e459016937cbc9b0215943d97cc25895d3b86bf6796e59469259c2d6be2b40f2",
+      "sha256": "351fb509ea8a8eb78d993dd4d373576b58a20e23eb2570b9ebd34d523d77efe2"
+    },
+    {
+      "path": "../v08/original-onTouch.json",
+      "evidenceId": "ev_9611f98ee250da2a6579f5154b77b849740616eb3e0958455d19515fd61d74af",
+      "sha256": "6d0b4c1560f101592a6a0bbc0ce5e875921a53a9f5db2c0c9d00f00115db0000"
+    }
+  ],
+  "limits": [
+    "Direct line geometry is adapted to reconstructed layout, not pixel-level recovery",
+    "Natal clipboard alone cannot validate flow; screenshots and static code used",
+    "Month/day/hour layers and flow stars not implemented",
+    "Birth-year transformation blocks temporarily replaced by selected-flow blocks while flow active"
+  ]
+}

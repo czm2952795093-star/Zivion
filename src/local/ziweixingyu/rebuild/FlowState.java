@@ -30,4 +30,13 @@ public final class FlowState {
   int index=-1;for(int i=0;i<starts.size();i++)if(starts.get(i)<=age)index=i;
   int target=index+direction;if(target<0)return 1;if(target>=starts.size())return age;return Math.max(1,Math.min(120,starts.get(target)));
  }
+ /** Change the four-transformation source without rotating either overlay. */
+ public static JSONObject selectSource(JSONObject chart,JSONObject layer,String source)throws JSONException{
+  if(source.length()!=1||BRANCH.indexOf(source)<0)throw new JSONException("宫位无效");
+  JSONObject result=new JSONObject(layer.toString()),labels=result.getJSONObject("palaces");
+  if(labels.length()==0)throw new JSONException("尚未进入首限");
+  JSONObject palace=chart.getJSONObject("十二宫信息").getJSONObject(source),base=palace.getJSONObject("四化"),transforms=new JSONObject();
+  for(Iterator<String> it=base.keys();it.hasNext();){String star=it.next();JSONObject t=new JSONObject(base.getJSONObject(star).toString());t.put("本命宫",t.getString("宫"));t.put("流宫",labels.getString(t.getString("支")));transforms.put(star,t);}
+  result.put("source",source).put("sourceLabel",labels.getString(source)).put("stem",palace.getString("宫干")).put("transforms",transforms);return result;
+ }
 }

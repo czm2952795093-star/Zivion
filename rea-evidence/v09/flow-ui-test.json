@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "environment": "Android9 API28 x86_64 offline 720x1280",
+  "checks": [
+    "upgrade preserves every stored chart, note and history entry",
+    "annual and decadal layers shown together for male sample",
+    "palace selection changes four transformations without rotating layers",
+    "copy includes both periods and selected source",
+    "hide lines and reset source leave birth data and stored records unchanged",
+    "age crosses decadal boundary and resets four-transformation source",
+    "mode switch resets selected palace",
+    "pre-first decade does not create a selectable fake layer",
+    "female dual overlay and selected transformation source",
+    "return to natal clears annual and decadal overlays",
+    "restart and new chart default to natal without stale selection"
+  ]
+}

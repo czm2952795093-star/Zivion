@@ -28,3 +28,15 @@ java -cp "tests/classes;tests/json-20240303.jar" RecordPolicyTest
 ```
 
 预期16项备份格式、合并检查，24项记录容量、文字长度和中文UTF-8大小检查。0.8.0未改动保存模块，本轮检查覆盖升级保留记录，完整容量实机测试沿用0.4.0记录。
+
+## 0.9.0：双层叠宫与四化来源选择
+
+在根目录执行下列新增检查（与上述FlowStateTest一起运行）：
+
+```powershell
+node tests/generate-flow-v09.js
+javac --release 8 -encoding UTF-8 -cp tests/json-20240303.jar -d tests/classes src/local/ziweixingyu/rebuild/FlowState.java tests/FlowSelectionTest.java
+java -cp "tests/classes;tests/json-20240303.jar" FlowSelectionTest tests/flow-v09.json
+```
+
+预期PASS486：新增原版6个状态、48次来源选择、不移动叠宫、不改写原始数据以及无效选择。2组输入此前曾用于本命对照，本次采集的是新流运状态。原版截图与静态依据索引见rea-evidence/v09/flow-observations.json，安装包交互检查见flow-ui-test.json。0.8的1385项检查继续通过；本命引擎字节未变，沿用0.8已有84组结构和56份本命对照结果。

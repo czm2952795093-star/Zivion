@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "records": {
+    "saved": {
+      "before": 2,
+      "after": 2,
+      "allPriorRecordsRetained": true
+    },
+    "notes": {
+      "before": 2,
+      "after": 2,
+      "allPriorRecordsRetained": true
+    },
+    "history": {
+      "before": 39,
+      "after": 42,
+      "allPriorRecordsRetained": true
+    }
+  }
+}
