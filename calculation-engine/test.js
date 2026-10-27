@@ -16,4 +16,9 @@ assert.notEqual(make()['十二宫信息']['巳']['大限'],make('1|1990|1|1|12|0
 for(const bad of ['1|2023|2|29|12|0|0|120|-8|1|0','1|2000|13|1|12|0|0|120|-8|1|0','1|2000|1|1|24|0|0|120|-8|1|0','1|2000|1|1|12|0|0|181|-8|1|0'])assert.equal(safely(bad).ok,false,bad);
 const leap=make('4|2023|2|10|12|0|0|120|-8|1|0');assert.equal(leap['其他信息']['农历是否闰月'],'1');
 const solar=make('2|1990|1|1|11|56|37|120|-8|1|0');assert.equal(solar['其他信息']['真太阳时'],'1990-01-01 11:56:37');
+// Original REA input onCreate restores 换月 from the final original field (default 0).
+// Original public copy on 2012-06-12, leap fourth month day 23: 命宫申 / 身宫寅.
+const leapOriginal=make('1|2012|6|12|18|0|0|120|-8|2|0');
+assert.equal(leapOriginal['其他信息']['命宫'],'申');assert.equal(leapOriginal['其他信息']['身宫'],'寅');
+assert.equal(make('1|2012|6|12|18|0|0|120|-8|2|0|1')['其他信息']['命宫'],'酉');
 console.log(JSON.stringify({status:'passed',boundaryCharts:tested,checks:['14 unique major stars','12 palaces','all transformation targets exist','lunar/solar equivalence','leap month','gender changes decadal direction','invalid inputs rejected','true-solar input retained']}));

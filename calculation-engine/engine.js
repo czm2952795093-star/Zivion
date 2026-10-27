@@ -4,6 +4,7 @@
  */
 const {astro,util}=require('iztro');
 const {Solar,Lunar}=require('lunar-typescript');
+const observedBrightness=require('./observed-brightness.json').values;
 const BRANCH='子丑寅卯辰巳午未申酉戌亥';
 const STEM='甲乙丙丁戊己庚辛壬癸';
 function equationMinutes(date){
@@ -18,7 +19,7 @@ function equationMinutes(date){
 }
 function pad(n){return String(n).padStart(2,'0');}
 function stamp(d){return d.getUTCFullYear()+'-'+pad(d.getUTCMonth()+1)+'-'+pad(d.getUTCDate())+' '+pad(d.getUTCHours())+':'+pad(d.getUTCMinutes())+':'+pad(d.getUTCSeconds());}
-function calculate(input){
+function calculate(input,options={}){
  const p=input.replace(/^柝袛袛祈祈拆#/,'').split('|');
  const mode=+p[0],year=+p[1],month=+p[2],day=+p[3],hour=+p[4],minute=+p[5],second=+p[6],lon=+p[7],sex=+p[9];
  if(![1,2,3,4].includes(mode)||p.length<11||year<1900||year>2100||month<1||month>12||day<1||day>31||hour<0||hour>23||minute<0||minute>59||second<0||second>59||!Number.isFinite(lon)||Math.abs(lon)>180||![1,2].includes(sex))throw Error('出生信息格式无效');
@@ -31,7 +32,7 @@ function calculate(input){
  else effective=new Date(clock.getTime()+correction(clock)*60000);
  const dateString=effective.getUTCFullYear()+'-'+(effective.getUTCMonth()+1)+'-'+effective.getUTCDate();
  const timeIndex=Math.floor((effective.getUTCHours()+1)/2);
- const a=astro.withOptions({type:'solar',dateStr:dateString,timeIndex,gender:sex===1?'男':'女',fixLeap:p[11]!=='0',language:'zh-CN',config:{yearDivide:'normal',dayDivide:'forward',algorithm:'default'}});
+ const a=astro.withOptions({type:'solar',dateStr:dateString,timeIndex,gender:sex===1?'男':'女',fixLeap:p[11]==='1',language:'zh-CN',config:{yearDivide:'normal',dayDivide:'forward',algorithm:'default'}});
  const lunar=Solar.fromYmdHms(effective.getUTCFullYear(),effective.getUTCMonth()+1,effective.getUTCDate(),effective.getUTCHours(),effective.getUTCMinutes(),effective.getUTCSeconds()).getLunar();
  const raw=a.rawDates.lunarDate, pillars=[lunar.getYearInGanZhiExact(),lunar.getMonthInGanZhiExact(),lunar.getDayInGanZhiExact(),lunar.getTimeInGanZhi()];
  const original=a.palaces.find(x=>x.isOriginalPalace);
@@ -39,7 +40,7 @@ function calculate(input){
  const palaces={};
  for(const p of a.palaces){
   const stars=[...p.majorStars,...p.minorStars,...p.adjectiveStars];const list={},brightness={},birth={};
-  for(const s of stars){list[s.name]=s.type;brightness[s.name]={'庙旺':s.brightness||''};if(s.mutagen)birth[s.name]=s.mutagen;}
+  for(const s of stars){const key=s.name+'|'+p.earthlyBranch;const observed=options.observedBrightness!==false&&Object.prototype.hasOwnProperty.call(observedBrightness,key);list[s.name]=s.type;brightness[s.name]={'庙旺':observed?observedBrightness[key]:(s.brightness||'')};if(s.mutagen)birth[s.name]=s.mutagen;}
   const transformations={};const transformed=util.getMutagensByHeavenlyStem(p.heavenlyStem);
   transformed.forEach((name,i)=>{const target=a.palaces.find(q=>[...q.majorStars,...q.minorStars].some(s=>s.name===name));if(target)transformations[name]={'支':target.earthlyBranch,'宫':target.name,'化':'禄权科忌'[i]};});
   palaces[p.earthlyBranch]={'宫干':p.heavenlyStem,'宫':p.name,'大限':p.decadal.range.join('~'),'小限':p.ages.join(','),'星列表':list,'星庙旺':brightness,'生年四化':birth,'四化':transformations,'生年博士':p.boshi12,'生年将前':p.jiangqian12,'生年岁前':p.suiqian12,'长生':p.changsheng12};

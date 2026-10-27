@@ -20456,11 +20456,147 @@ var ZiweiEngine = (() => {
     }
   });
 
+  // work/calculation-engine/observed-brightness.json
+  var require_observed_brightness = __commonJS({
+    "work/calculation-engine/observed-brightness.json"(exports, module) {
+      module.exports = {
+        source: "REA observations of original APK public chart text; 9 calibration dates; each entry seen at least twice with no conflict. Unobserved pairs retain iztro defaults. This is a partial display compatibility table, not the original algorithm.",
+        values: {
+          "\u53F3\u5F3C|\u5B50": "\u5E99",
+          "\u5929\u9B41|\u5B50": "\u65FA",
+          "\u516B\u5EA7|\u5B50": "\u9677",
+          "\u5DE6\u8F85|\u5BC5": "\u65FA",
+          "\u9640\u7F57|\u5BC5": "",
+          "\u5929\u5DEB|\u5BC5": "",
+          "\u4E09\u53F0|\u5BC5": "\u5E73",
+          "\u7984\u5B58|\u536F": "\u65FA",
+          "\u64CE\u7F8A|\u8FB0": "\u5229",
+          "\u5929\u5B98|\u8FB0": "\u65FA",
+          "\u5BE1\u5BBF|\u8FB0": "\u9677",
+          "\u706B\u661F|\u5DF3": "\u65FA",
+          "\u5929\u8D35|\u5DF3": "\u5E73",
+          "\u9634\u715E|\u5348": "",
+          "\u89E3\u795E|\u5348": "\u5E99",
+          "\u5929\u53A8|\u5348": "",
+          "\u526F\u622A|\u5348": "\u5E99",
+          "\u5929\u5211|\u672A": "\u9677",
+          "\u6069\u5149|\u672A": "\u65FA",
+          "\u622A\u7A7A|\u672A": "\u5E99",
+          "\u5929\u94BA|\u7533": "\u5E99",
+          "\u5929\u798F|\u7533": "\u5E99",
+          "\u5B64\u8FB0|\u7533": "\u5E73",
+          "\u7834\u788E|\u9149": "\u5E73",
+          "\u5929\u6708|\u620C": "",
+          "\u5929\u59DA|\u4EA5": "\u9677",
+          "\u622A\u7A7A|\u5B50": "\u9677",
+          "\u526F\u622A|\u4E11": "\u4E0D",
+          "\u9634\u715E|\u5BC5": "",
+          "\u5929\u9B41|\u5BC5": "",
+          "\u5929\u5B98|\u536F": "\u65FA",
+          "\u5929\u798F|\u536F": "\u5E73",
+          "\u516B\u5EA7|\u536F": "\u5E73",
+          "\u9640\u7F57|\u8FB0": "",
+          "\u7984\u5B58|\u5DF3": "\u5E99",
+          "\u5929\u5BFF|\u5DF3": "\u5E73",
+          "\u7834\u788E|\u5DF3": "\u9677",
+          "\u64CE\u7F8A|\u5348": "\u5E73",
+          "\u94C3\u661F|\u5348": "\u5E99",
+          "\u5929\u94BA|\u5348": "",
+          "\u5929\u624D|\u4EA5": "\u5E99",
+          "\u4E09\u53F0|\u4EA5": "\u5E73",
+          "\u5929\u540C|\u5B50": "\u5E99",
+          "\u592A\u9634|\u5B50": "\u5E99",
+          "\u6B66\u66F2|\u4E11": "\u5E99",
+          "\u8D2A\u72FC|\u4E11": "\u5E99",
+          "\u5929\u4F24|\u4E11": "\u5E73",
+          "\u592A\u9633|\u5BC5": "\u5E73",
+          "\u5DE8\u95E8|\u5BC5": "\u65FA",
+          "\u5929\u9A6C|\u5BC5": "\u65FA",
+          "\u5B64\u8FB0|\u5BC5": "\u5E73",
+          "\u5929\u76F8|\u536F": "\u5E99",
+          "\u5929\u4F7F|\u536F": "\u5E73",
+          "\u5929\u673A|\u8FB0": "\u5E99",
+          "\u5929\u6881|\u8FB0": "\u5E99",
+          "\u534E\u76D6|\u8FB0": "\u5E99",
+          "\u7D2B\u5FAE|\u5DF3": "\u65FA",
+          "\u4E03\u6740|\u5DF3": "\u65FA",
+          "\u52AB\u715E|\u5DF3": "\u9677",
+          "\u5929\u5DEB|\u7533": "",
+          "\u89E3\u795E|\u7533": "\u4E0D",
+          "\u5EC9\u8D1E|\u9149": "\u4E0D",
+          "\u7834\u519B|\u9149": "\u65FA",
+          "\u54B8\u6C60|\u9149": "\u5E73",
+          "\u5929\u5BFF|\u620C": "\u5E99",
+          "\u5BE1\u5BBF|\u620C": "\u9677",
+          "\u65EC\u7A7A|\u620C": "\u9677",
+          "\u5929\u5E9C|\u4EA5": "\u5E99",
+          "\u526F\u65EC|\u4EA5": "\u5E73",
+          "\u5DE8\u95E8|\u5B50": "\u5E99",
+          "\u5929\u76F8|\u4E11": "\u65FA",
+          "\u5929\u5FB7|\u4E11": "\u5E99",
+          "\u5BE1\u5BBF|\u4E11": "\u5E73",
+          "\u7834\u788E|\u4E11": "\u9677",
+          "\u5929\u540C|\u5BC5": "\u5F97",
+          "\u5929\u6881|\u5BC5": "\u5E99",
+          "\u5929\u54ED|\u5BC5": "\u5E73",
+          "\u6B66\u66F2|\u536F": "\u5229",
+          "\u4E03\u6740|\u536F": "\u65FA",
+          "\u592A\u9633|\u8FB0": "\u5E99",
+          "\u5929\u559C|\u5DF3": "\u5E99",
+          "\u5B64\u8FB0|\u5DF3": "\u9677",
+          "\u5929\u7A7A|\u5DF3": "\u5E99",
+          "\u5929\u673A|\u5348": "\u9677",
+          "\u871A\u5EC9|\u5348": "",
+          "\u51E4\u9601|\u5348": "\u5E73",
+          "\u5E74\u89E3|\u5348": "\u5E99",
+          "\u7D2B\u5FAE|\u672A": "\u5E99",
+          "\u7834\u519B|\u672A": "\u5E99",
+          "\u9F99\u6C60|\u7533": "\u5E73",
+          "\u5929\u5E9C|\u9149": "\u65FA",
+          "\u6708\u5FB7|\u9149": "",
+          "\u592A\u9634|\u620C": "\u65FA",
+          "\u5929\u865A|\u620C": "\u9677",
+          "\u5EC9\u8D1E|\u4EA5": "\u9677",
+          "\u8D2A\u72FC|\u4EA5": "\u65FA",
+          "\u7EA2\u9E3E|\u4EA5": "\u65FA",
+          "\u5927\u8017|\u4EA5": "\u9677",
+          "\u9F99\u5FB7|\u4EA5": "",
+          "\u54B8\u6C60|\u5B50": "\u9677",
+          "\u5929\u9A6C|\u5DF3": "\u4E0D",
+          "\u534E\u76D6|\u672A": "\u9677",
+          "\u52AB\u715E|\u7533": "\u5E73",
+          "\u526F\u65EC|\u7533": "\u5E99",
+          "\u65EC\u7A7A|\u9149": "\u5E99",
+          "\u6069\u5149|\u620C": "\u5E99",
+          "\u5929\u624D|\u5B50": "\u65FA",
+          "\u6069\u5149|\u536F": "\u5E99",
+          "\u4E09\u53F0|\u8FB0": "\u5E99",
+          "\u5929\u798F|\u5348": "\u5E73",
+          "\u706B\u661F|\u7533": "\u9677",
+          "\u516B\u5EA7|\u620C": "\u5E73",
+          "\u7984\u5B58|\u5B50": "\u65FA",
+          "\u526F\u622A|\u5B50": "\u9677",
+          "\u64CE\u7F8A|\u4E11": "\u5F97",
+          "\u622A\u7A7A|\u4E11": "\u4E0D",
+          "\u5929\u9B41|\u536F": "\u5E99",
+          "\u5929\u94BA|\u5DF3": "\u65FA",
+          "\u5929\u798F|\u5DF3": "\u65FA",
+          "\u5929\u5B98|\u5348": "\u5E99",
+          "\u5929\u624D|\u672A": "\u5E73",
+          "\u9634\u715E|\u7533": "",
+          "\u9640\u7F57|\u4EA5": "",
+          "\u5929\u53A8|\u4EA5": ""
+        }
+      };
+    }
+  });
+
   // work/calculation-engine/engine.js
   var require_engine = __commonJS({
     "work/calculation-engine/engine.js"(exports, module) {
       var { astro, util } = require_lib2();
       var { Solar, Lunar } = require_dist();
+      var observedBrightness = require_observed_brightness().values;
       var STEM = "\u7532\u4E59\u4E19\u4E01\u620A\u5DF1\u5E9A\u8F9B\u58EC\u7678";
       function equationMinutes(date) {
         const t = (date.getTime() / 864e5 + 24405875e-1 - 2451545) / 36525;
@@ -20478,7 +20614,7 @@ var ZiweiEngine = (() => {
       function stamp(d) {
         return d.getUTCFullYear() + "-" + pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate()) + " " + pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes()) + ":" + pad(d.getUTCSeconds());
       }
-      function calculate(input) {
+      function calculate(input, options = {}) {
         const p = input.replace(/^柝袛袛祈祈拆#/, "").split("|");
         const mode = +p[0], year = +p[1], month = +p[2], day = +p[3], hour = +p[4], minute = +p[5], second = +p[6], lon = +p[7], sex = +p[9];
         if (![1, 2, 3, 4].includes(mode) || p.length < 11 || year < 1900 || year > 2100 || month < 1 || month > 12 || day < 1 || day > 31 || hour < 0 || hour > 23 || minute < 0 || minute > 59 || second < 0 || second > 59 || !Number.isFinite(lon) || Math.abs(lon) > 180 || ![1, 2].includes(sex)) throw Error("\u51FA\u751F\u4FE1\u606F\u683C\u5F0F\u65E0\u6548");
@@ -20495,7 +20631,7 @@ var ZiweiEngine = (() => {
         } else effective = new Date(clock.getTime() + correction(clock) * 6e4);
         const dateString = effective.getUTCFullYear() + "-" + (effective.getUTCMonth() + 1) + "-" + effective.getUTCDate();
         const timeIndex = Math.floor((effective.getUTCHours() + 1) / 2);
-        const a = astro.withOptions({ type: "solar", dateStr: dateString, timeIndex, gender: sex === 1 ? "\u7537" : "\u5973", fixLeap: p[11] !== "0", language: "zh-CN", config: { yearDivide: "normal", dayDivide: "forward", algorithm: "default" } });
+        const a = astro.withOptions({ type: "solar", dateStr: dateString, timeIndex, gender: sex === 1 ? "\u7537" : "\u5973", fixLeap: p[11] === "1", language: "zh-CN", config: { yearDivide: "normal", dayDivide: "forward", algorithm: "default" } });
         const lunar = Solar.fromYmdHms(effective.getUTCFullYear(), effective.getUTCMonth() + 1, effective.getUTCDate(), effective.getUTCHours(), effective.getUTCMinutes(), effective.getUTCSeconds()).getLunar();
         const raw = a.rawDates.lunarDate, pillars = [lunar.getYearInGanZhiExact(), lunar.getMonthInGanZhiExact(), lunar.getDayInGanZhiExact(), lunar.getTimeInGanZhi()];
         const original = a.palaces.find((x) => x.isOriginalPalace);
@@ -20505,8 +20641,10 @@ var ZiweiEngine = (() => {
           const stars = [...p2.majorStars, ...p2.minorStars, ...p2.adjectiveStars];
           const list = {}, brightness = {}, birth = {};
           for (const s of stars) {
+            const key = s.name + "|" + p2.earthlyBranch;
+            const observed = options.observedBrightness !== false && Object.prototype.hasOwnProperty.call(observedBrightness, key);
             list[s.name] = s.type;
-            brightness[s.name] = { "\u5E99\u65FA": s.brightness || "" };
+            brightness[s.name] = { "\u5E99\u65FA": observed ? observedBrightness[key] : s.brightness || "" };
             if (s.mutagen) birth[s.name] = s.mutagen;
           }
           const transformations = {};
