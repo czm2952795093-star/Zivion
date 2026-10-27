@@ -6,6 +6,7 @@ const {astro,util}=require('iztro');
 const {Solar,Lunar}=require('lunar-typescript');
 const observedBrightness=require('./observed-brightness.json').values;
 const {applyAuxiliaryRules}=require('./auxiliary-rules');
+const {withBirthYear}=require('./birth-year');
 const BRANCH='子丑寅卯辰巳午未申酉戌亥';
 const STEM='甲乙丙丁戊己庚辛壬癸';
 function equationMinutes(date){
@@ -33,8 +34,11 @@ function calculate(input,options={}){
  else effective=new Date(clock.getTime()+correction(clock)*60000);
  const dateString=effective.getUTCFullYear()+'-'+(effective.getUTCMonth()+1)+'-'+effective.getUTCDate();
  const timeIndex=Math.floor((effective.getUTCHours()+1)/2);
- const a=astro.withOptions({type:'solar',dateStr:dateString,timeIndex,gender:sex===1?'男':'女',fixLeap:p[11]==='1',language:'zh-CN',config:{yearDivide:'normal',dayDivide:'forward',algorithm:'default'}});
  const lunar=Solar.fromYmdHms(effective.getUTCFullYear(),effective.getUTCMonth()+1,effective.getUTCDate(),effective.getUTCHours(),effective.getUTCMinutes(),effective.getUTCSeconds()).getLunar();
+ const yearInstant=new Date(effective.getTime()+3600000);
+ const yearLunar=Solar.fromYmdHms(yearInstant.getUTCFullYear(),yearInstant.getUTCMonth()+1,yearInstant.getUTCDate(),yearInstant.getUTCHours(),yearInstant.getUTCMinutes(),yearInstant.getUTCSeconds()).getLunar();
+ const buildChart=()=>astro.withOptions({type:'solar',dateStr:dateString,timeIndex,gender:sex===1?'男':'女',fixLeap:p[11]==='1',language:'zh-CN',config:{yearDivide:'normal',horoscopeDivide:'normal',dayDivide:options.calendarRules===false?'forward':'current',algorithm:'default'}});
+ const a=options.calendarRules===false?buildChart():withBirthYear([yearLunar.getYearGan(),yearLunar.getYearZhi()],buildChart);
  const raw=a.rawDates.lunarDate, pillars=[lunar.getYearInGanZhiExact(),lunar.getMonthInGanZhiExact(),lunar.getDayInGanZhiExact(),lunar.getTimeInGanZhi()];
  const original=a.palaces.find(x=>x.isOriginalPalace);
  const info={'性别':(STEM.indexOf(a.rawDates.chineseDate.yearly[0])%2?'阴':'阳')+(sex===1?'男':'女'),'五行局':a.fiveElementsClass,'命主':a.soul,'身主':a.body,'命宫':a.earthlyBranchOfSoulPalace,'身宫':a.earthlyBranchOfBodyPalace,'经度':lon.toFixed(6),'钟表时间':stamp(clock),'真太阳时':stamp(effective),'农历年':String(raw.lunarYear),'农历月':lunar.getMonthInChinese().replace('闰',''),'农历日':lunar.getDayInChinese(),'农历是否闰月':raw.isLeap?'1':'0','立春年干':pillars[0][0],'立春年支':pillars[0][1],'月干':pillars[1][0],'月支':pillars[1][1],'日干':pillars[2][0],'日支':pillars[2][1],'时干':pillars[3][0],'时支':pillars[3][1],'层1.1':original?original.earthlyBranch:'','算法来源':'iztro 2.6.2 / 独立实现','太阳时说明':'NOAA近似模型，与原版秒值可能不同'};

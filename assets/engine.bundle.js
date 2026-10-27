@@ -20640,6 +20640,26 @@ var ZiweiEngine = (() => {
     }
   });
 
+  // work/calculation-engine/birth-year.js
+  var require_birth_year = __commonJS({
+    "work/calculation-engine/birth-year.js"(exports, module) {
+      var ganzhi = require_ganzhi();
+      function withBirthYear(pair, calculate) {
+        const original = ganzhi.getHeavenlyStemAndEarthlyBranchBySolarDate;
+        ganzhi.getHeavenlyStemAndEarthlyBranchBySolarDate = function(...args) {
+          const result = original(...args);
+          return Object.assign({}, result, { yearly: pair.slice() });
+        };
+        try {
+          return calculate();
+        } finally {
+          ganzhi.getHeavenlyStemAndEarthlyBranchBySolarDate = original;
+        }
+      }
+      module.exports = { withBirthYear };
+    }
+  });
+
   // work/calculation-engine/engine.js
   var require_engine = __commonJS({
     "work/calculation-engine/engine.js"(exports, module) {
@@ -20647,6 +20667,7 @@ var ZiweiEngine = (() => {
       var { Solar, Lunar } = require_dist();
       var observedBrightness = require_observed_brightness().values;
       var { applyAuxiliaryRules } = require_auxiliary_rules();
+      var { withBirthYear } = require_birth_year();
       var BRANCH = "\u5B50\u4E11\u5BC5\u536F\u8FB0\u5DF3\u5348\u672A\u7533\u9149\u620C\u4EA5";
       var STEM = "\u7532\u4E59\u4E19\u4E01\u620A\u5DF1\u5E9A\u8F9B\u58EC\u7678";
       function equationMinutes(date) {
@@ -20682,8 +20703,11 @@ var ZiweiEngine = (() => {
         } else effective = new Date(clock.getTime() + correction(clock) * 6e4);
         const dateString = effective.getUTCFullYear() + "-" + (effective.getUTCMonth() + 1) + "-" + effective.getUTCDate();
         const timeIndex = Math.floor((effective.getUTCHours() + 1) / 2);
-        const a = astro.withOptions({ type: "solar", dateStr: dateString, timeIndex, gender: sex === 1 ? "\u7537" : "\u5973", fixLeap: p[11] === "1", language: "zh-CN", config: { yearDivide: "normal", dayDivide: "forward", algorithm: "default" } });
         const lunar = Solar.fromYmdHms(effective.getUTCFullYear(), effective.getUTCMonth() + 1, effective.getUTCDate(), effective.getUTCHours(), effective.getUTCMinutes(), effective.getUTCSeconds()).getLunar();
+        const yearInstant = new Date(effective.getTime() + 36e5);
+        const yearLunar = Solar.fromYmdHms(yearInstant.getUTCFullYear(), yearInstant.getUTCMonth() + 1, yearInstant.getUTCDate(), yearInstant.getUTCHours(), yearInstant.getUTCMinutes(), yearInstant.getUTCSeconds()).getLunar();
+        const buildChart = () => astro.withOptions({ type: "solar", dateStr: dateString, timeIndex, gender: sex === 1 ? "\u7537" : "\u5973", fixLeap: p[11] === "1", language: "zh-CN", config: { yearDivide: "normal", horoscopeDivide: "normal", dayDivide: options.calendarRules === false ? "forward" : "current", algorithm: "default" } });
+        const a = options.calendarRules === false ? buildChart() : withBirthYear([yearLunar.getYearGan(), yearLunar.getYearZhi()], buildChart);
         const raw = a.rawDates.lunarDate, pillars = [lunar.getYearInGanZhiExact(), lunar.getMonthInGanZhiExact(), lunar.getDayInGanZhiExact(), lunar.getTimeInGanZhi()];
         const original = a.palaces.find((x) => x.isOriginalPalace);
         const info = { "\u6027\u522B": (STEM.indexOf(a.rawDates.chineseDate.yearly[0]) % 2 ? "\u9634" : "\u9633") + (sex === 1 ? "\u7537" : "\u5973"), "\u4E94\u884C\u5C40": a.fiveElementsClass, "\u547D\u4E3B": a.soul, "\u8EAB\u4E3B": a.body, "\u547D\u5BAB": a.earthlyBranchOfSoulPalace, "\u8EAB\u5BAB": a.earthlyBranchOfBodyPalace, "\u7ECF\u5EA6": lon.toFixed(6), "\u949F\u8868\u65F6\u95F4": stamp(clock), "\u771F\u592A\u9633\u65F6": stamp(effective), "\u519C\u5386\u5E74": String(raw.lunarYear), "\u519C\u5386\u6708": lunar.getMonthInChinese().replace("\u95F0", ""), "\u519C\u5386\u65E5": lunar.getDayInChinese(), "\u519C\u5386\u662F\u5426\u95F0\u6708": raw.isLeap ? "1" : "0", "\u7ACB\u6625\u5E74\u5E72": pillars[0][0], "\u7ACB\u6625\u5E74\u652F": pillars[0][1], "\u6708\u5E72": pillars[1][0], "\u6708\u652F": pillars[1][1], "\u65E5\u5E72": pillars[2][0], "\u65E5\u652F": pillars[2][1], "\u65F6\u5E72": pillars[3][0], "\u65F6\u652F": pillars[3][1], "\u5C421.1": original ? original.earthlyBranch : "", "\u7B97\u6CD5\u6765\u6E90": "iztro 2.6.2 / \u72EC\u7ACB\u5B9E\u73B0", "\u592A\u9633\u65F6\u8BF4\u660E": "NOAA\u8FD1\u4F3C\u6A21\u578B\uFF0C\u4E0E\u539F\u7248\u79D2\u503C\u53EF\u80FD\u4E0D\u540C" };

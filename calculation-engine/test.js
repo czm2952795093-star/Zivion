@@ -21,4 +21,15 @@ const solar=make('2|1990|1|1|11|56|37|120|-8|1|0');assert.equal(solar['其他信
 const leapOriginal=make('1|2012|6|12|18|0|0|120|-8|2|0');
 assert.equal(leapOriginal['其他信息']['命宫'],'申');assert.equal(leapOriginal['其他信息']['身宫'],'寅');
 assert.equal(make('1|2012|6|12|18|0|0|120|-8|2|0|1')['其他信息']['命宫'],'酉');
+// Original-app boundary regression: lunar birth year turns at 23:00 on New Year's Eve,
+// while month/day-based Ziwei placements retain the current lunar date until midnight.
+const eve=make('1|2024|2|9|23|30|0|120|-8|1|0|0');
+assert.equal(eve['其他信息']['性别'],'阳男');assert.equal(eve['其他信息']['五行局'],'水二局');
+assert.ok(eve['十二宫信息']['辰']['星列表']['紫微']);
+assert.equal(make('1|2024|2|5|12|0|0|120|-8|1|0|0')['其他信息']['性别'],'阴男');
+assert.equal(make('1|2023|1|24|12|0|0|120|-8|2|0|0')['其他信息']['性别'],'阴女');
+const ganzhi=require('lunar-lite/lib/ganzhi'),originalYear=ganzhi.getHeavenlyStemAndEarthlyBranchBySolarDate;
+assert.throws(()=>require('./birth-year').withBirthYear(['甲','辰'],()=>{throw Error('forced');}),/forced/);
+assert.equal(ganzhi.getHeavenlyStemAndEarthlyBranchBySolarDate,originalYear,'year adapter restores dependency after error');
+assert.deepEqual(make()['十二宫信息'],a['十二宫信息'],'cross-year calculation does not leak context into later charts');
 console.log(JSON.stringify({status:'passed',boundaryCharts:tested,checks:['14 unique major stars','12 palaces','all transformation targets exist','lunar/solar equivalence','leap month','gender changes decadal direction','invalid inputs rejected','true-solar input retained']}));
