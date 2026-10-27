@@ -1,1 +1,1 @@
-开发检查记录。月份1238、旧流运1385、来源选择486断言通过；UI完整验收未完成。install.json表示已安装开发包，不表示已验收。现有界面截图仅证明对应单个状态。
+0.10.0已通过月序逻辑与Android9模拟器验证。以month-ui-test.json、artifact-check.json、update-data-test.json和install-final.json为最终记录；较早的截图与install.json仅记录开发阶段。详见docs/STATUS.md及版本说明。

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "sha256": "bd204fa29dd894d6b561df5950e431a76f541d700e9dd02398128dc17d31ad62",
+  "bytes": 254557,
+  "version": "0.10.0",
+  "checks": [
+    "REA pulled installed APK equals built APK",
+    "same signing certificate as 0.9.0",
+    "bundled engine equals working source and delivered 0.9.0 engine",
+    "versionCode10/versionName0.10.0",
+    "no native libraries or requested permissions"
+  ]
+}

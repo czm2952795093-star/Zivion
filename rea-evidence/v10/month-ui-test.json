@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "environment": "Android9 API28 x86_64 offline 720x1280",
+  "checks": [
+    "upgrade retains all charts, notes and history",
+    "monthly mode retains annual and decadal context",
+    "all twelve months advance, boundaries stop, records unchanged",
+    "month dropdown selects arbitrary month",
+    "palace selection uses monthly destination labels",
+    "copy includes month, both parent periods, selected source and month distribution",
+    "year change recalculates month locations and stems; changing month clears old selection",
+    "month controls only shown in monthly mode; month choice survives mode switch",
+    "invalid age leaves state; pre-first decade permits month layer",
+    "leap-birth month placement matches original month annotations",
+    "dial cycles natal, decadal, annual and monthly",
+    "restart starts natal; new chart month defaults to first month"
+  ]
+}
