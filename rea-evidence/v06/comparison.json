@@ -1,0 +1,1000 @@
+{
+  "source": "42 prior original charts reused for development;359-entry table frozen before6 new holdouts. Unknown strengths are explicitly omitted, never fabricated.",
+  "totals": {
+    "development": {
+      "samples": 42,
+      "stars": 2940,
+      "positions": 2940,
+      "extra": 0,
+      "brightness": 2766,
+      "palaces": 504,
+      "stems": 504,
+      "decadals": 504,
+      "major": 588,
+      "transforms": 2016,
+      "strengthTotal": 2016,
+      "strengthKnown": 1879,
+      "strengthMatch": 1879,
+      "strengthUnknown": 137
+    },
+    "holdout": {
+      "samples": 6,
+      "stars": 420,
+      "positions": 420,
+      "extra": 0,
+      "brightness": 331,
+      "palaces": 72,
+      "stems": 72,
+      "decadals": 72,
+      "major": 84,
+      "transforms": 288,
+      "strengthTotal": 288,
+      "strengthKnown": 240,
+      "strengthMatch": 240,
+      "strengthUnknown": 48
+    }
+  },
+  "samples": [
+    {
+      "key": "19651123030000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 69,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19730314120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 69,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19780805070000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 61,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19840321143000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 67,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19881230110000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19930106023000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19950715083000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 69,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20000229120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 68,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20031118214500-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 60,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 46,
+        "strengthMatch": 46,
+        "strengthUnknown": 2
+      },
+      "differences": []
+    },
+    {
+      "key": "20070520160000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 68,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20120612180000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 61,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 7,
+        "strengthMatch": 7,
+        "strengthUnknown": 41
+      },
+      "differences": []
+    },
+    {
+      "key": "20240108153000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19840714013000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 65,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19850714033000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19860714053000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 54,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19870714073000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 69,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19880714093000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 68,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19890714113000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19900714133000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19910714153000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 64,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19920714173000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19930714193000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 44,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 2,
+        "strengthMatch": 2,
+        "strengthUnknown": 46
+      },
+      "differences": []
+    },
+    {
+      "key": "19900101233000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19900102003000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20230121233000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 69,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20230124120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20230322120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20230405120000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20230406120000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 69,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20230420120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 65,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20240204120000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20240204180000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20240205120000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 61,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 6,
+        "strengthMatch": 6,
+        "strengthUnknown": 42
+      },
+      "differences": []
+    },
+    {
+      "key": "20240209233000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20240210003000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 69,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20240210120000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 70,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19760317063000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 59,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19870825213000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 61,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19951109143000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 62,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 45,
+        "strengthMatch": 45,
+        "strengthUnknown": 3
+      },
+      "differences": []
+    },
+    {
+      "key": "20080503103000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 62,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20170927183000-1",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 53,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 45,
+        "strengthMatch": 45,
+        "strengthUnknown": 3
+      },
+      "differences": []
+    },
+    {
+      "key": "20300615163000-2",
+      "role": "development",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 60,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19790218083000-2",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 65,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "19820607203000-1",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 53,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 44,
+        "strengthMatch": 44,
+        "strengthUnknown": 4
+      },
+      "differences": []
+    },
+    {
+      "key": "19940923103000-2",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 51,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 46,
+        "strengthMatch": 46,
+        "strengthUnknown": 2
+      },
+      "differences": []
+    },
+    {
+      "key": "20011104143000-1",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 46,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 6,
+        "strengthMatch": 6,
+        "strengthUnknown": 42
+      },
+      "differences": []
+    },
+    {
+      "key": "20160819183000-2",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 56,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    },
+    {
+      "key": "20290513163000-1",
+      "role": "holdout",
+      "scores": {
+        "stars": 70,
+        "positions": 70,
+        "extra": 0,
+        "brightness": 60,
+        "palaces": 12,
+        "stems": 12,
+        "decadals": 12,
+        "major": 14,
+        "transforms": 48,
+        "strengthTotal": 48,
+        "strengthKnown": 48,
+        "strengthMatch": 48,
+        "strengthUnknown": 0
+      },
+      "differences": []
+    }
+  ],
+  "limits": "Observed display compatibility only. Gregorian,120E,UTC+8,fixLeap off; not original algorithm recovery or universal parity."
+}

@@ -1,0 +1,31 @@
+{
+  "fixedBeforeCollection": true,
+  "samples": [
+    [
+      "19790218083000",
+      2
+    ],
+    [
+      "19820607203000",
+      1
+    ],
+    [
+      "19940923103000",
+      2
+    ],
+    [
+      "20011104143000",
+      1
+    ],
+    [
+      "20160819183000",
+      2
+    ],
+    [
+      "20290513163000",
+      1
+    ]
+  ],
+  "strengthTableSha256": "08bea44d950658bbc170f0dbeeee511646364eaf66166031939605c98dd50fd1",
+  "rule": "Table frozen before collection; do not expand from these6 holdout charts this release."
+}

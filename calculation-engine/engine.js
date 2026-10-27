@@ -7,6 +7,7 @@ const {Solar,Lunar}=require('lunar-typescript');
 const observedBrightness=require('./observed-brightness.json').values;
 const {applyAuxiliaryRules}=require('./auxiliary-rules');
 const {withBirthYear}=require('./birth-year');
+const {strengthFor}=require('./transformation-strength');
 const BRANCH='子丑寅卯辰巳午未申酉戌亥';
 const STEM='甲乙丙丁戊己庚辛壬癸';
 function equationMinutes(date){
@@ -47,7 +48,7 @@ function calculate(input,options={}){
   const stars=[...p.majorStars,...p.minorStars,...p.adjectiveStars];const list={},brightness={},birth={};
   for(const s of stars){const key=s.name+'|'+p.earthlyBranch;const observed=options.observedBrightness!==false&&Object.prototype.hasOwnProperty.call(observedBrightness,key);list[s.name]=s.type;brightness[s.name]={'庙旺':observed?observedBrightness[key]:(s.brightness||'')};if(s.mutagen)birth[s.name]=s.mutagen;}
   const transformations={};const transformed=util.getMutagensByHeavenlyStem(p.heavenlyStem);
-  transformed.forEach((name,i)=>{const target=a.palaces.find(q=>[...q.majorStars,...q.minorStars].some(s=>s.name===name));if(target)transformations[name]={'支':target.earthlyBranch,'宫':target.name,'化':'禄权科忌'[i]};});
+  transformed.forEach((name,i)=>{const target=a.palaces.find(q=>[...q.majorStars,...q.minorStars].some(s=>s.name===name));if(target){const t={'支':target.earthlyBranch,'宫':target.name,'化':'禄权科忌'[i]};const strength=options.observedStrength===false?null:strengthFor(name,t['化'],t['支']);if(strength!==null)t['力度']=strength;transformations[name]=t;}});
   palaces[p.earthlyBranch]={'宫干':p.heavenlyStem,'宫':p.name,'大限':p.decadal.range.join('~'),'小限':p.ages.join(','),'星列表':list,'星庙旺':brightness,'生年四化':birth,'四化':transformations,'生年博士':p.boshi12,'生年将前':p.jiangqian12,'生年岁前':p.suiqian12,'长生':p.changsheng12};
  }
  if(options.auxiliaryRules!==false)applyAuxiliaryRules(palaces,a.rawDates.chineseDate.yearly[0],a.rawDates.chineseDate.yearly[1],(star,branch)=>{
