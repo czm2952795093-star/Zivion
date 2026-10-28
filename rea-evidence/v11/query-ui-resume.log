@@ -1,0 +1,15 @@
+Checking year 2028
+ERROR: null root node returned by UiTestAutomationBridge.
+Checking year 2027
+Checking year 2028
+Checking year 2109
+ERROR: null root node returned by UiTestAutomationBridge.
+Checking year 2108
+Checking year 1989
+Checking year 2027
+PASS monthly query retains month, clears source, and respects 1-120 nominal-age boundaries
+ERROR: null root node returned by UiTestAutomationBridge.
+PASS month changes, source reset and mode changes consistently clear stale details
+PASS about shows installed version; new chart adopts draft and resets monthly query
+PASS all original records remain after query and draft regression checks
+{"status": "passed", "environment": "Android9 API28 x86_64 offline 720x1280", "checks": ["upgrade preserves all prior records before interactions", "year query validates input and converts January Gregorian birth using lunar birth year", "return from edited draft preserves chart title, source highlight, repeated-tap detail, and copy", "saving old chart after draft edits keeps original title and birth request together", "year change clears obsolete palace selection and lower details", "monthly query retains month, clears source, and respects 1-120 nominal-age boundaries", "month changes, source reset and mode changes consistently clear stale details", "about shows installed version; new chart adopts draft and resets monthly query", "all original records remain after query and draft regression checks"], "intentionalSavedRecord": "Original11", "execution": "Five checks in previous final-build run; remaining checks resumed after emulator restart; see query-ui-completed-phase.json"}

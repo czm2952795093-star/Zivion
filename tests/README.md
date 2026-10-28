@@ -52,3 +52,12 @@ java -cp "tests/classes;tests/json-20240303.jar" MonthStateTest tests/month-fixt
 预期PASS1238。固定月份位置/月干来自5个出生输入的7个原版年度截图状态（其中4个新截图、3个旧截图）；84项是月份标注，不是完整流月命盘。月宫旋转来自REA静态代码。月序边界、所选宫位四化来源、本命数据隔离、无效输入也被检查。原1385和486检查继续通过。原版证据索引在rea-evidence/v10/month-observations.json，安装包结果在month-ui-test.json。
 
 本命引擎与0.9.0字节一致；本轮没有重复运行全部56份本命对照，沿用已保存结果。新生成的month-fixtures.json只用于独立引擎输入，不是原版输出。
+
+## 0.11.0：年份查询与状态一致性
+
+```powershell
+javac --release 8 -encoding UTF-8 -cp tests/json-20240303.jar -d tests/classes src/local/ziweixingyu/rebuild/FlowState.java tests/YearQueryTest.java
+java -cp "tests/classes;tests/json-20240303.jar" YearQueryTest tests/month-fixtures.json
+```
+
+预期PASS1260：5份既有输入、每份120虚岁、农历出生年换算、上下界、非法年份、数据隔离。1385、486、1238项也在本版重新运行通过。Android端交互检查见rea-evidence/v11/query-ui-test.json；升级记录保留及安装包身份见同目录update-data-test.json和artifact-check.json。UI脚本依赖本地ADB、REA和剪贴板探针，不作为独立可移植测试发布。

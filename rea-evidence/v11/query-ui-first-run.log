@@ -1,0 +1,16 @@
+PASS upgrade preserves all prior records before interactions
+Checking year 0
+ERROR: null root node returned by UiTestAutomationBridge.
+ERROR: null root node returned by UiTestAutomationBridge.
+Checking year 1988
+Checking year 2027
+PASS year query validates input and converts January Gregorian birth using lunar birth year
+PASS return from edited draft preserves chart title, source highlight, repeated-tap detail, and copy
+PASS saving old chart after draft edits keeps original title and birth request together
+PASS year change clears obsolete palace selection and lower details
+Traceback (most recent call last):
+  File "C:\Users\29527\Documents\Codex\2026-10-23\http-feiyuntiegui-com-http-feiyuntiegui-com\work\test_query_ui_v11.py", line 56, in <module>
+    click('流月');click('正月');click('六月');year(2027);assert '2027年 六月' in full_details()
+  File "C:\Users\29527\Documents\Codex\2026-10-23\http-feiyuntiegui-com-http-feiyuntiegui-com\work\test_query_ui_v11.py", line 6, in click
+    nodes=[n for n in ui.nodes() if n.get('text')==label];assert nodes,'Missing '+label;ui.tap(nodes[0]);time.sleep(.25)
+AssertionError: Missing 正月

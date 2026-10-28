@@ -6,6 +6,14 @@ import java.util.*;
 public final class FlowState {
  public static final String BRANCH="子丑寅卯辰巳午未申酉戌亥",STEM="甲乙丙丁戊己庚辛壬癸";
  static final String[] NAMES={"命","父母","福德","田宅","官禄","交友","迁移","疾厄","财帛","子女","夫妻","兄弟"};
+ /** Query convenience: use the same lunar-year/nominal-age relationship as describe. */
+ public static int ageForYear(JSONObject chart,String value)throws JSONException{
+  int birth=Integer.parseInt(chart.getJSONObject("其他信息").getString("农历年"));
+  if(value==null||!value.trim().matches("[0-9]{4}"))throw new JSONException("请输入4位年份");
+  int year=Integer.parseInt(value.trim()),age=year-birth+1;
+  if(age<1||age>120)throw new JSONException("可查询年份为"+birth+"至"+(birth+119)+"（1至120虚岁）");
+  return age;
+ }
  public static JSONObject describe(JSONObject chart,boolean annual,int age)throws JSONException{
   if(age<1||age>120)throw new JSONException("虚岁请输入1至120");
   JSONObject natal=chart.getJSONObject("十二宫信息"),info=chart.getJSONObject("其他信息");

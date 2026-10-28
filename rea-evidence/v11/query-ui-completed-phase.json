@@ -1,0 +1,12 @@
+{
+  "status": "partial",
+  "checks": [
+    "upgrade preserves all prior records before interactions",
+    "year query validates input and converts January Gregorian birth using lunar birth year",
+    "return from edited draft preserves chart title, source highlight, repeated-tap detail, and copy",
+    "saving old chart after draft edits keeps original title and birth request together",
+    "year change clears obsolete palace selection and lower details"
+  ],
+  "source": "query-ui-run.log; final build installed before these checks",
+  "remaining": "monthly query, boundaries, reset, about, fresh chart, final record retention"
+}
