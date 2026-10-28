@@ -6,6 +6,7 @@
 
 - [当前进展](docs/STATUS.md)
 - [开发日志](docs/DEVELOPMENT_LOG.md)
+- [开发与主动同步约定](docs/DEVELOPMENT_WORKFLOW.md)
 - [版本变化](CHANGELOG.md)
 - [后续工作](docs/ROADMAP.md)
 - [构建和依赖说明](BUILD.md)
