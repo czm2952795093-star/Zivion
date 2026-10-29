@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-29",
+  "scope": "Manual month/day/hour palace placement, not civil date conversion parity",
+  "originalApkSha256": "fb87cd02a3cea411b0a07b4ec69f361571f13333a191bccc0ae0b638a98e4985",
+  "validStates": [
+    {
+      "capture": "original-annual-current",
+      "birth": "19900101120000",
+      "sex": 1,
+      "displayedYear": 2027,
+      "displayedAge": 39,
+      "monthAnchor": "戌",
+      "dayAnchor": "巳",
+      "hourAnchor": "戌",
+      "manualInput": {
+        "month": 9,
+        "day": 20,
+        "hour": "巳"
+      },
+      "timeBasis": "2026-10-29 Beijing about10:20, current unmodified emulator time; screenshot status clock UTC02:20",
+      "screenshotSha256": "5660309047158193ec69aa10e790f0f425e8a79a4e4a750b4b487bba20c182fe",
+      "evidenceId": "ev_e7268788175a0ef9605e57d67a786b6faf52d33b27413d5a6dea67371a69bbbb"
+    },
+    {
+      "capture": "different-birth-day20-si",
+      "birth": "20011104143000",
+      "sex": 1,
+      "displayedYear": 2027,
+      "displayedAge": 27,
+      "monthAnchor": "寅",
+      "dayAnchor": "酉",
+      "hourAnchor": "寅",
+      "manualInput": {
+        "month": 9,
+        "day": 20,
+        "hour": "巳"
+      },
+      "timeBasis": "2026-10-29 Beijing10:30; controlled emulator time recorded in clock-observations.json",
+      "screenshotSha256": "9e691313690add5409e25a30e6361c94b6d11030db46b810f993bc3b6aa26865",
+      "evidenceId": "ev_e7c9d30cb10c15a160bbff473989e8a587a074ce9130e41accc913be6ff6aa62"
+    }
+  ],
+  "invalidAttempts": [
+    {
+      "capture": "new-year-day1-zi",
+      "reason": "Screenshot blank transition, no readable original chart. Not accepted as day1 evidence."
+    },
+    {
+      "capture": "month-end-day30-hai",
+      "reason": "Screenshot launcher wallpaper, no readable original chart. Not accepted as day30 evidence."
+    }
+  ],
+  "limitations": [
+    "Only month/day/hour anchor text was transcribed from the two valid screenshots; no full twelve-palace runtime transcription claimed.",
+    "Manual input day20/si is consistent with independent calendar expectation and displayed anchors; original six-field native protocol not read.",
+    "Displayed annual year2027 and actual2026 date differ; cached-age explanation is static inference, not isolated causal experiment.",
+    "Historical clock attempts failed to yield charts; root cause not established. Emulator clock/auto_time restored.",
+    "Day1/day30 input bounds tested in independent implementation, not original calendar boundary parity."
+  ]
+}

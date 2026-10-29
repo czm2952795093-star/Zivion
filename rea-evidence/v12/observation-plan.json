@@ -1,0 +1,23 @@
+{
+  "cases": [
+    [
+      "new-year-day1-zi",
+      "19900101120000",
+      1,
+      "2026-02-17T00:30:00+08:00"
+    ],
+    [
+      "month-end-day30-hai",
+      "19900101120000",
+      1,
+      "2026-03-18T21:30:00+08:00"
+    ],
+    [
+      "different-birth-day20-si",
+      "20011104143000",
+      1,
+      "2026-10-29T10:30:00+08:00"
+    ]
+  ],
+  "scope": "Manual day/hour layer placement, not date conversion parity. Dates selected with independent library only to target candidate lunar day 1/30/20; labels must be read from original screenshots. Original cached age/year is recorded separately. Original APK unmodified. Emulator clock restored in finally."
+}

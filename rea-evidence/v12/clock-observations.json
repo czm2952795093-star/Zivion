@@ -1,0 +1,28 @@
+{
+  "observations": [
+    {
+      "case": "new-year-day1-zi",
+      "birth": "19900101120000",
+      "sex": 1,
+      "requestedBeijingTime": "2026-02-17T00:30:00+08:00",
+      "observedDeviceUtc": "2026-02-16T16:30:01"
+    },
+    {
+      "case": "month-end-day30-hai",
+      "birth": "19900101120000",
+      "sex": 1,
+      "requestedBeijingTime": "2026-03-18T21:30:00+08:00",
+      "observedDeviceUtc": "2026-03-18T13:30:00"
+    },
+    {
+      "case": "different-birth-day20-si",
+      "birth": "20011104143000",
+      "sex": 1,
+      "requestedBeijingTime": "2026-10-29T10:30:00+08:00",
+      "observedDeviceUtc": "2026-10-29T02:30:00"
+    }
+  ],
+  "clockRestored": true,
+  "restoredAutoTime": "1",
+  "restoredDeviceUtc": "2026-10-29T02:27:48"
+}
