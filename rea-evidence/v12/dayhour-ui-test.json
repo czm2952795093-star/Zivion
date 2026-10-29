@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "environment": "Android9 API28 x86_64 offline 720x1280",
+  "checks": [
+    "upgrade preserves every prior record",
+    "invalid day and cancellation leave chart, source and copied summary unchanged",
+    "manual day20 si overlays match original anchor evidence and preserve monthly transformations",
+    "palace source selection and manual day1/day30 and zi/hai keep transformation source separate",
+    "line toggle and return from edited input preserve overlay and original chart identity",
+    "toggle restores chosen day/hour; month, year and age changes clear obsolete overlays",
+    "mode changes disable overlay and a newly calculated chart resets manual day/hour",
+    "installed version and limitation copy correct; restart works and all old records remain"
+  ],
+  "scope": "Manual overlays only, no automated calendar conversion or lunar month-length validation",
+  "executionPhases": [
+    "dayhour-ui-first-run.log: first two passed; harness abbreviated label corrected",
+    "dayhour-ui-resume.log: third passed, followed by client reconnect/emulator stop",
+    "dayhour-ui-finish.log: state restored; hour dropdown needed upward scroll",
+    "dayhour-ui-remaining.log: remaining five passed after correcting dropdown scroll, same app build"
+  ]
+}

@@ -1,0 +1,32 @@
+PASS upgrade preserves every prior record
+ERROR: null root node returned by UiTestAutomationBridge.
+Checking year 2027
+ERROR: null root node returned by UiTestAutomationBridge.
+Error: Invalid arguments for command: text
+Usage: input [<source>] <command> [<arg>...]
+
+The sources are: 
+      dpad
+      keyboard
+      mouse
+      touchpad
+      gamepad
+      touchnavigation
+      joystick
+      touchscreen
+      stylus
+      trackball
+
+The commands and default sources are:
+      text <string> (Default: touchscreen)
+      keyevent [--longpress] <key code number or name> ... (Default: keyboard)
+      tap <x> <y> (Default: touchscreen)
+      swipe <x1> <y1> <x2> <y2> [duration(ms)] (Default: touchscreen)
+      draganddrop <x1> <y1> <x2> <y2> [duration(ms)] (Default: touchscreen)
+      press (Default: trackball)
+      roll <dx> <dy> (Default: trackball)
+PASS invalid day and cancellation leave chart, source and copied summary unchanged
+Traceback (most recent call last):
+  File "C:\Users\29527\Documents\Codex\2026-10-23\http-feiyuntiegui-com-http-feiyuntiegui-com\work\test_dayhour_ui_v12.py", line 36, in <module>
+    copied=copy();assert transforms(copied)==transforms(baseline);assert '戌：日友 / 时命' in copied
+AssertionError

@@ -61,3 +61,12 @@ java -cp "tests/classes;tests/json-20240303.jar" YearQueryTest tests/month-fixtu
 ```
 
 预期PASS1260：5份既有输入、每份120虚岁、农历出生年换算、上下界、非法年份、数据隔离。1385、486、1238项也在本版重新运行通过。Android端交互检查见rea-evidence/v11/query-ui-test.json；升级记录保留及安装包身份见同目录update-data-test.json和artifact-check.json。UI脚本依赖本地ADB、REA和剪贴板探针，不作为独立可移植测试发布。
+
+## 0.12.0：手选日时叠宫
+
+```powershell
+javac --release 8 -encoding UTF-8 -cp tests/json-20240303.jar -d tests/classes src/local/ziweixingyu/rebuild/FlowState.java src/local/ziweixingyu/rebuild/MonthState.java src/local/ziweixingyu/rebuild/DayHourState.java tests/DayHourStateTest.java
+java -cp "tests/classes;tests/json-20240303.jar" DayHourStateTest tests/month-fixtures.json
+```
+
+预期PASS145267。两份有效原版截图仅核对月/日/时命宫起点；组合测试不等同于原版样本数。初一与三十运行采集无有效命盘，不作为边界通过；详见rea-evidence/v12/EVIDENCE.md。日时组件没有日历换算或大小月校验。

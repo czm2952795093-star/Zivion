@@ -1,0 +1,9 @@
+ERROR: null root node returned by UiTestAutomationBridge.
+Checking year 2027
+ERROR: null root node returned by UiTestAutomationBridge.
+Traceback (most recent call last):
+  File "C:\Users\29527\Documents\Codex\2026-10-23\http-feiyuntiegui-com-http-feiyuntiegui-com\work\finish_dayhour_ui_v12.py", line 12, in <module>
+    exec(s[s.index("scroll(True);ui.adb('shell','input','tap','90','650');selected=copy()"):])
+  File "<string>", line 2, in <module>
+  File "<string>", line 15, in day_query
+AssertionError: Missing hour 子
