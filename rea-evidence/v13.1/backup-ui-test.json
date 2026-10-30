@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "environment": "Android9 offline emulator",
+  "checks": [
+    "real Android calculation stores scientific longitude",
+    "backup serialization succeeds with scientific longitude and opens system export picker; cancellation keeps records",
+    "scientific longitude session still resumes without duplicate history"
+  ],
+  "limits": "Export picker opened and cancelled; file writing/import UI not repeated. Roundtrip and merge validated by JVM tests."
+}

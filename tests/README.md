@@ -80,3 +80,7 @@ java -cp "tests/classes;tests/json-20240303.jar" SessionStateTest tests/month-fi
 ```
 
 预期PASS115。涵盖往返解析、版本及字段类型、范围、无效来源和无数据污染；运行恢复及草稿行为见rea-evidence/v13/session-ui-test.json。
+
+## 0.13.1备份经度修复
+
+编译BackupCodec、SessionState前先编译新增ChartRequest.java（与其他源码一起传给javac即可）。运行BackupRequestTest预期PASS279，BackupCodecTest预期PASS16，SessionStateTest tests/month-fixtures.json预期PASS115。Android实际导出入口检查见rea-evidence/v13.1/backup-ui-test.json。

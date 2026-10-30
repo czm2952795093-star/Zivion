@@ -18,7 +18,7 @@ public final class BackupCodec {
    JSONObject r=rows.getJSONObject(i),n=new JSONObject();n.put("title",string(r,"title",RecordPolicy.TITLE_LIMIT));
    if(kind.equals("notes")){n.put("body",string(r,"body",RecordPolicy.NOTE_LIMIT));}
    else {String request=string(r,"request",500);
-    if(!request.matches("柝袛袛祈祈拆#[1-4]\\|[0-9]{4}\\|[0-9]{1,2}\\|[0-9]{1,2}\\|[0-9]{1,2}\\|[0-9]{1,2}\\|[0-9]{1,2}\\|-?[0-9]+(?:\\.[0-9]+)?\\|-8\\|[12]\\|0(?:\\|[01])?"))throw new JSONException("命例时间格式无效");
+    ChartRequest.validate(request);
     n.put("request",request);n.put("clock",r.optString("clock",""));n.put("time",r.optLong("time",0));n.put("id",r.optString("id",UUID.randomUUID().toString()));
    }clean.put(n);
   }return clean;
