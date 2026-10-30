@@ -1,0 +1,1 @@
+PASS 1260 year-query checks; all 120 ages per fixture, limits, malformed input, chart isolation

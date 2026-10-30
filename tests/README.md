@@ -70,3 +70,13 @@ java -cp "tests/classes;tests/json-20240303.jar" DayHourStateTest tests/month-fi
 ```
 
 预期PASS145267。两份有效原版截图仅核对月/日/时命宫起点；组合测试不等同于原版样本数。初一与三十运行采集无有效命盘，不作为边界通过；详见rea-evidence/v12/EVIDENCE.md。日时组件没有日历换算或大小月校验。
+
+## 0.13.0：恢复命盘参数
+
+在已编译FlowState、MonthState、DayHourState的基础上，编译RecordPolicy.java、SessionState.java与tests/SessionStateTest.java，再运行：
+
+```powershell
+java -cp "tests/classes;tests/json-20240303.jar" SessionStateTest tests/month-fixtures.json
+```
+
+预期PASS115。涵盖往返解析、版本及字段类型、范围、无效来源和无数据污染；运行恢复及草稿行为见rea-evidence/v13/session-ui-test.json。

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "environment": "Android9 API28 x86_64 offline 720x1280",
+  "checks": [
+    "upgrade preserves all existing records and needs no previous session format",
+    "monthly query, day/hour, selected palace and hidden lines saved as one coherent session",
+    "background/restart preserves separate draft and restores exact chart without duplicate history",
+    "force stop from chart restores source selection, palace detail and copy",
+    "natal selected palace resumes without carrying obsolete monthly overlays",
+    "invalid unsaved birth date neither replaces valid session nor adds history; draft persists",
+    "new successful calculation replaces resume session and only real calculations add history",
+    "installed feature copy correct and every pre-upgrade record retained"
+  ],
+  "historyAddedByCalculations": 3,
+  "resumeAddsHistory": false
+}

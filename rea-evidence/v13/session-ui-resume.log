@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\29527\Documents\Codex\2026-10-23\http-feiyuntiegui-com-http-feiyuntiegui-com\work\test_session_ui_v13.py", line 14, in <module>
+    for key in ['saved','notes','history']:assert before[key]==current[key]
+AssertionError

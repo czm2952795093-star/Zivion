@@ -1,0 +1,1 @@
+PASS 115 session checks; round trips, boundaries, malformed snapshots, chart validation and immutability
