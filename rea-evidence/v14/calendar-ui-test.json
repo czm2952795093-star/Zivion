@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "environment": "Android9 API28 offline720x1280",
+  "checks": [
+    "civil conversion preview matches 2026-10-29 lunar September20 and cancellation preserves chart (passed first phase)",
+    "apply sets lunar year/month/day/hour together without changing natal identity or adding history",
+    "invalid dates and times leave all query state unchanged",
+    "leap dates and late-Zi can be previewed but cannot apply unverified overlay rules",
+    "date before birth is rejected atomically by chart age range",
+    "lunar new year boundary changes queried year and month correctly at civil midnight",
+    "restart restores applied overlay and copy exactly without duplicate history",
+    "version description accurate and all prior records retained"
+  ],
+  "newHistoryFromCalculations": 1
+}

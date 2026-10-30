@@ -1,0 +1,15 @@
+{
+  "accessDate": "2026-10-30",
+  "sources": [
+    {
+      "url": "https://data.weather.gov.hk/weatherAPI/hko_data/calendar/nongli_calendar_2025.csv",
+      "sha256": "d2c5d752f370d3e583bde4950845fb6b4bfce1e1551da913ad14d655014fb32c"
+    },
+    {
+      "url": "https://data.weather.gov.hk/weatherAPI/hko_data/calendar/nongli_calendar_2026.csv",
+      "sha256": "8b2892b0e04faa632f09ea36ffee29e67b4427b85a18708d907d88d8be452b98"
+    }
+  ],
+  "dailyComparisons": 730,
+  "scope": "Civil UTC+8 calendar, not original APK day-hour parity"
+}

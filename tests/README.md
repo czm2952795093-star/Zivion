@@ -84,3 +84,15 @@ java -cp "tests/classes;tests/json-20240303.jar" SessionStateTest tests/month-fi
 ## 0.13.1备份经度修复
 
 编译BackupCodec、SessionState前先编译新增ChartRequest.java（与其他源码一起传给javac即可）。运行BackupRequestTest预期PASS279，BackupCodecTest预期PASS16，SessionStateTest tests/month-fixtures.json预期PASS115。Android实际导出入口检查见rea-evidence/v13.1/backup-ui-test.json。
+
+## 0.14.0公历换算
+
+编译CalendarLookup.java与tests/CalendarLookupTest.java（依赖json-20240303.jar），执行：
+
+```powershell
+java -cp "tests/classes;tests/json-20240303.jar" CalendarLookupTest assets/calendar-months.json tests/calendar-official.json
+```
+
+预期PASS13185。fixture由香港天文台2025/2026 CSV按公历日期、干支年、月名、日名转录，原始CSV和摘要保留在rea-evidence/v14；不是用待测历表生成的预期值。
+
+重新生成历表：在calculation-engine安装package-lock锁定依赖后，执行node calculation-engine/generate-calendar.js assets/calendar-months.json。生成器只写历表，不重建本命engine.bundle.js。

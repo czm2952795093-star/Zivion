@@ -1,0 +1,14 @@
+PASS civil conversion preview matches 2026-10-29 lunar September20 and cancellation preserves chart (passed first phase)
+PASS apply sets lunar year/month/day/hour together without changing natal identity or adding history
+ERROR: null root node returned by UiTestAutomationBridge.
+ERROR: null root node returned by UiTestAutomationBridge.
+ERROR: null root node returned by UiTestAutomationBridge.
+ERROR: null root node returned by UiTestAutomationBridge.
+PASS invalid dates and times leave all query state unchanged
+PASS leap dates and late-Zi can be previewed but cannot apply unverified overlay rules
+PASS date before birth is rejected atomically by chart age range
+Traceback (most recent call last):
+  File "C:\Users\29527\Documents\Codex\2026-10-23\http-feiyuntiegui-com-http-feiyuntiegui-com\work\resume_calendar_ui_v14.py", line 6, in <module>
+    exec(s[s.index("convert('20261029100000',True)"):])
+  File "<string>", line 13, in <module>
+AssertionError

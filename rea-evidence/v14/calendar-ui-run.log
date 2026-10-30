@@ -1,0 +1,5 @@
+PASS civil conversion preview matches 2026-10-29 lunar September20 and cancellation preserves chart
+Traceback (most recent call last):
+  File "C:\Users\29527\Documents\Codex\2026-10-23\http-feiyuntiegui-com-http-feiyuntiegui-com\work\test_calendar_ui_v14.py", line 14, in <module>
+    convert('20261029100000',True);converted=copy();assert '2026年 九月' in converted and '二十 巳时' in converted and '事项：Calendar14' in converted;capture('converted-chart')
+AssertionError

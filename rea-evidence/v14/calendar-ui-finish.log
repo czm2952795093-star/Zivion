@@ -1,0 +1,3 @@
+PASS lunar new year boundary changes queried year and month correctly at civil midnight
+PASS restart restores applied overlay and copy exactly without duplicate history
+PASS version description accurate and all prior records retained
