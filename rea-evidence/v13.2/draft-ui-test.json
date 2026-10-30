@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "environment": "Android9 API28 offline emulator",
+  "checks": [
+    "opening saved chart preserves independent draft title, date, longitude and sex",
+    "restart preserves draft separately from last viewed saved chart",
+    "cancel explicit chart editing leaves draft and chart unchanged",
+    "history browsing preserves draft; confirmed editing explicitly replaces and persists chart inputs",
+    "browsing, cancellation, editing and restart leave all records unchanged"
+  ]
+}

@@ -1,0 +1,6 @@
+PASS opening saved chart preserves independent draft title, date, longitude and sex
+PASS restart preserves draft separately from last viewed saved chart
+PASS cancel explicit chart editing leaves draft and chart unchanged
+ERROR: null root node returned by UiTestAutomationBridge.
+PASS history browsing preserves draft; confirmed editing explicitly replaces and persists chart inputs
+PASS browsing, cancellation, editing and restart leave all records unchanged
