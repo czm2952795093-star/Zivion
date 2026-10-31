@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "editing clears stale preview and errors; invalid dates leave chart unchanged and correction works",
+    "leap and late-Zi rejection retain readable conversion and leave chart unchanged",
+    "out-of-chart-age dates retain valid calendar preview alongside age error",
+    "ordinary apply and restart still work with no record changes"
+  ],
+  "environment": "Android9 API28 offline720x1280"
+}

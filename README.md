@@ -2,7 +2,7 @@
 
 基于 REA 证据持续开发的紫微星语独立安卓复刻项目。当前仓库保存源码、版本快照、原版对照证据、验证结果和开发记录。
 
-**已验证版本：0.14.0（公历换算辅助叠宫）。整款 APP 尚未与原版完全一致。**
+**已验证版本：0.14.1（换算结果与错误提示修复）。整款 APP 尚未与原版完全一致。**
 
 - [当前进展](docs/STATUS.md)
 - [开发日志](docs/DEVELOPMENT_LOG.md)
@@ -11,10 +11,10 @@
 - [后续工作](docs/ROADMAP.md)
 - [构建和依赖说明](BUILD.md)
 - [测试说明](tests/README.md)
-- [0.14.0 开发记录](https://github.com/czm2952795093-star/Zivion/tree/develop/calendar-0.14.0)
-- [0.14.0 版本说明](docs/releases/0.14.0.md)
+- [0.14.1 开发记录](https://github.com/czm2952795093-star/Zivion/tree/develop/calendar-0.14.1)
+- [0.14.1 版本说明](docs/releases/0.14.1.md)
 
-[下载安装包和源码](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.14.0)
+[下载安装包和源码](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.14.1)
 
 ## 已有功能
 

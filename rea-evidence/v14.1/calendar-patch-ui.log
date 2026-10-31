@@ -1,0 +1,6 @@
+ERROR: null root node returned by UiTestAutomationBridge.
+ERROR: null root node returned by UiTestAutomationBridge.
+PASS editing clears stale preview and errors; invalid dates leave chart unchanged and correction works
+PASS leap and late-Zi rejection retain readable conversion and leave chart unchanged
+PASS out-of-chart-age dates retain valid calendar preview alongside age error
+PASS ordinary apply and restart still work with no record changes
