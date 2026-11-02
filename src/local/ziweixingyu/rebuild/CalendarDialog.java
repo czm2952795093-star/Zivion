@@ -8,11 +8,14 @@ import java.util.*;
 
 /** Explicit civil calendar helper; uncertain native leap/late-Zi policies are not applied. */
 final class CalendarDialog {
+ static CalendarLookup load(MainActivity host)throws Exception{
+  try(InputStream in=host.getAssets().open("calendar-months.json");ByteArrayOutputStream out=new ByteArrayOutputStream()){
+   byte[] b=new byte[8192];int n;while((n=in.read(b))!=-1)out.write(b,0,n);return new CalendarLookup(out.toString("UTF-8"));
+  }
+ }
  static void show(FlowController flow){
   MainActivity host=flow.host;final CalendarLookup lookup;
-  try(InputStream in=host.getAssets().open("calendar-months.json");ByteArrayOutputStream out=new ByteArrayOutputStream()){
-   byte[] b=new byte[8192];int n;while((n=in.read(b))!=-1)out.write(b,0,n);lookup=new CalendarLookup(out.toString("UTF-8"));
-  }catch(Exception e){host.message("换算未打开",e.getMessage());return;}
+  try{lookup=load(host);}catch(Exception e){host.message("换算未打开",e.getMessage());return;}
   LinearLayout box=host.column();box.setPadding(host.dp(20),host.dp(8),host.dp(20),0);
   box.addView(host.text("按东八区钟表时间换算，午夜换日，不作真太阳时修正。支持1901—2100年；闰月和23点可查看结果，暂不能填入叠宫。",14,MainActivity.INK));
   java.text.SimpleDateFormat f=new java.text.SimpleDateFormat("yyyyMMddHHmmss",Locale.US);f.setTimeZone(TimeZone.getTimeZone("GMT+8"));

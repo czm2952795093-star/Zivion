@@ -1,1 +1,0 @@
-PASS 145267 checks; 2 original runtime anchor sets; static rotation, exhaustive manual day/hour combinations, bounds and immutability

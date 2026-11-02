@@ -11,3 +11,6 @@ __pycache__/
 .env.*
 local.properties
 .DS_Store
+
+rea-evidence/
+private-publication-archive*/

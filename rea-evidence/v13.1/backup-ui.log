@@ -1,3 +1,0 @@
-PASS real Android calculation stores scientific longitude
-PASS backup serialization succeeds with scientific longitude and opens system export picker; cancellation keeps records
-PASS scientific longitude session still resumes without duplicate history

@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "version": "0.14.2",
+  "calendar": {
+    "checks": 13185,
+    "officialDates": 730,
+    "timeSamplesPerDate": 3
+  },
+  "monthBoundaries": {
+    "checks": 129,
+    "officialMonthBoundaries": 23
+  },
+  "android": {
+    "status": "passed",
+    "checks": [
+      "small month rejects day30 atomically; cancel preserves state and correcting to29 succeeds",
+      "day30 accepted in large month; changing to small month and toggling or restarting cannot revive invalid overlay",
+      "out-of-table manual entry and checkbox are blocked without losing monthly chart",
+      "ordinary June30 remains valid even when leap June has29 days; leap conversion remains preview-only",
+      "valid calendar apply/restart still work; all saved records, notes and history unchanged"
+    ],
+    "environment": "Android9 API28 offline720x1280"
+  },
+  "records": {
+    "saved": {
+      "before": 3,
+      "after": 3,
+      "allPriorRecordsRetained": true
+    },
+    "notes": {
+      "before": 2,
+      "after": 2,
+      "allPriorRecordsRetained": true
+    },
+    "history": {
+      "before": 62,
+      "after": 62,
+      "allPriorRecordsRetained": true
+    }
+  },
+  "finalPackage": {
+    "sha256": "1109b8194b935e91bfc535c3d7c9b723b4a4d47f3a110a3b9a96b7bbe9211e60",
+    "sameUpgradeSigner": true,
+    "matchesInstalledPackage": true,
+    "noRequestedPermissions": true,
+    "engineAndCalendarDataUnchanged": true
+  },
+  "finalUI": {
+    "status": "passed",
+    "checks": [
+      "final APK about/version accurate",
+      "valid manual overlay restored and copied identically",
+      "saved notes history unchanged"
+    ]
+  }
+}

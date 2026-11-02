@@ -27,6 +27,16 @@ public final class CalendarLookup {
   int hour=Integer.parseInt(input.substring(8,10)),branch=((hour+1)/2)%12;
   return new JSONObject().put("year",months[at][0]).put("month",Math.abs(months[at][1])).put("leap",months[at][1]<0).put("day",day).put("daysInMonth",months[at][2]).put("hour",branch).put("lateZi",hour==23).put("civil",input);
  }
+ /** Selected flow months denote ordinary months, never their leap counterparts. */
+ public int regularMonthDays(int year,int month)throws Exception{
+  if(month<1||month>12)throw new Exception("农历月份须为1至12月");
+  for(int[] row:months)if(row[0]==year&&row[1]==month)return row[2];
+  throw new Exception("日时叠宫日期校验支持农历1900至2100年，请调整年份");
+ }
+ public void requireRegularDay(int year,int month,int day)throws Exception{
+  int length=regularMonthDays(year,month);
+  if(day<1||day>length)throw new Exception(year+"年农历"+month+"月（非闰月）只有"+length+"天，请输入1至"+length+"日");
+ }
  public static void requireOverlay(JSONObject result)throws Exception{
   if(result.getBoolean("leap"))throw new Exception("闰月叠宫规则尚未确认，本次只显示换算结果");
   if(result.getBoolean("lateZi"))throw new Exception("23点子时换日规则尚未确认，本次只显示换算结果");
