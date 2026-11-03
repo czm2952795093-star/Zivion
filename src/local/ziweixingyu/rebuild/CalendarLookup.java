@@ -27,6 +27,15 @@ public final class CalendarLookup {
   int hour=Integer.parseInt(input.substring(8,10)),branch=((hour+1)/2)%12;
   return new JSONObject().put("year",months[at][0]).put("month",Math.abs(months[at][1])).put("leap",months[at][1]<0).put("day",day).put("daysInMonth",months[at][2]).put("hour",branch).put("lateZi",hour==23).put("civil",input);
  }
+ public int[] lunarMonths(int year)throws Exception{
+  ArrayList<Integer> result=new ArrayList<>();for(int[] row:months)if(row[0]==year)result.add(row[1]);
+  if(result.isEmpty())throw new Exception("阴历日期选择支持1900至2100年");
+  int[] values=new int[result.size()];for(int i=0;i<values.length;i++)values[i]=result.get(i);return values;
+ }
+ public int lunarMonthDays(int year,int signedMonth)throws Exception{
+  for(int[] row:months)if(row[0]==year&&row[1]==signedMonth)return row[2];
+  throw new Exception("所选年份不存在该阴历月份");
+ }
  /** Selected flow months denote ordinary months, never their leap counterparts. */
  public int regularMonthDays(int year,int month)throws Exception{
   if(month<1||month>12)throw new Exception("农历月份须为1至12月");

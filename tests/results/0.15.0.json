@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "version": "0.15.0",
+  "dateSelectionChecks": 7604,
+  "calendarChecks": 13185,
+  "ordinaryMonthChecks": 129,
+  "officialDailyDates": 730,
+  "monthOptionYears": 201,
+  "android": {
+    "status": "passed",
+    "checks": [
+      "month/day/time fields and accessible labels work; ordinary-to-leap month clamps day with notice; cancel preserves draft and chart",
+      "changing to a year without the selected leap month falls back to ordinary month with notice; system Back cancels atomically",
+      "typed time commits on Fill without extra blur; date and leap flag persist after restart while previous chart stays unchanged",
+      "invalid initial date is explained and preserved on cancel; only explicit Fill replaces it with the shown valid selection",
+      "typing year then immediately filling commits the year and synchronizes leap status",
+      "selected leap birth date calculates on explicit Start; restart restores chart; prior records retained with only one new test history"
+    ],
+    "environment": "Android9 API28 offline720x1280",
+    "newHistoryEntries": 1
+  },
+  "layout": {
+    "status": "passed",
+    "checks": [
+      "Gregorian date picker still opens and cancels unchanged",
+      "1.3x system font: scrollable lunar form and both action buttons accessible",
+      "cancellation and font changes preserve birth draft, chart, and all records"
+    ]
+  },
+  "records": {
+    "saved": {
+      "before": 3,
+      "after": 3,
+      "allPriorRecordsRetained": true
+    },
+    "notes": {
+      "before": 2,
+      "after": 2,
+      "allPriorRecordsRetained": true
+    },
+    "history": {
+      "before": 62,
+      "after": 63,
+      "allPriorRecordsRetained": true
+    }
+  },
+  "apk": {
+    "sha256": "ca57d91720d7d02fd0326ec0fecb6d4b5f85b7ed9b9c393b9e1677c49ab05b25",
+    "sameUpgradeSigner": true,
+    "matchesInstalledPackage": true,
+    "engineAndCalendarDataUnchanged": true,
+    "noRequestedPermissions": true
+  }
+}
