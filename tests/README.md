@@ -23,3 +23,14 @@ java -cp "tests/classes;tests/json-20240303.jar" LunarDateSelectionTest assets/c
 预期PASS7604。覆盖730个官方日期、1900—2100年的逐年月份列表、闰月切换、大小月调整、时分秒保留和无效变更保护。13185项换算与129项非闰月边界检查在本轮重新通过。
 
 Android 9中验证6组交互：取消与日期调整、跨年闰月处理、键盘时分秒/立即关闭与恢复、无效旧日期、直接键盘改年填入、明确起盘及记录保留。另核对公历入口与1.3倍系统字体。范围与摘要见results/0.15.0.json。
+
+
+## 0.15.1 出生日期显示
+
+编译BirthDateText.java与tests/BirthDateTextTest.java（依赖org.json）后执行：
+
+```powershell
+java -cp "tests/classes;tests/json-20240303.jar" BirthDateTextTest
+```
+
+预期PASS21，覆盖闰月标记及前缀归一、阴历/公历、秒与输入格式，确认不修改计算结果。4组Android 9交互验证输入切换、选择器填入、隐藏/模式切换/重启、普通和闰月记录；另检查1.3倍字体换行。记录未发生变化。详情见results/0.15.1.json。既有日期/模型测试在本轮沿用历史结果，不计入本轮新测试。

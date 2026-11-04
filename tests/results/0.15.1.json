@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "version": "0.15.1",
+  "formatChecks": 21,
+  "android": {
+    "status": "passed",
+    "checks": [
+      "input hint updates immediately for leap/calendar/seconds toggles; chart and copy both distinguish leap birth date",
+      "picker fills refresh leap hint even when numeric date is unchanged; cancel and fill preserve existing chart",
+      "hidden birth time is absent from copy and accessible description through mode changes and restart; unhide restores it",
+      "ordinary saved chart and existing leap history display correctly; all records unchanged and previous birth chart restored"
+    ],
+    "environment": "Android9 API28 offline720x1280",
+    "newHistoryEntries": 0
+  },
+  "layout": {
+    "status": "passed",
+    "checks": [
+      "1.3x system font: leap and seconds hint visible with flexible label height",
+      "font and seconds settings restored; chart and all records unchanged"
+    ]
+  },
+  "records": {
+    "saved": {
+      "before": 3,
+      "after": 3,
+      "allPriorRecordsRetained": true
+    },
+    "notes": {
+      "before": 2,
+      "after": 2,
+      "allPriorRecordsRetained": true
+    },
+    "history": {
+      "before": 63,
+      "after": 63,
+      "allPriorRecordsRetained": true
+    }
+  },
+  "scope": "Display and accessibility only; existing calendar/calculation tests inherited without rerun",
+  "apk": {
+    "sha256": "bc1b2b6f5c0d0535aabe47a3c46c2e7546e882866f949db51c72ac3da93dad68",
+    "sameUpgradeSigner": true,
+    "matchesInstalledPackage": true,
+    "engineAndCalendarDataUnchanged": true,
+    "noRequestedPermissions": true
+  }
+}

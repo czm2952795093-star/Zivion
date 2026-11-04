@@ -2,22 +2,23 @@
 
 Zivion 是一款 Android 紫微排盘与命盘记录应用，支持离线排盘、分层查询、日期换算和本地资料管理。
 
-当前版本：**0.15.0 · 测试版**
+当前版本：**0.15.1 · 测试版**
 
-[下载安装包](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.15.0) · [使用说明](docs/USAGE.md) · [更新记录](CHANGELOG.md) · [功能进展](docs/STATUS.md)
+[下载安装包](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.15.1) · [使用说明](docs/USAGE.md) · [更新记录](CHANGELOG.md) · [功能进展](docs/STATUS.md)
 
 ## 主要功能
 
 - 本地排盘与十二宫查看，支持宫位详情、四化来源和连线。
 - 本命、大限、流年、流月查询，支持按年份、虚岁和月份定位。
 - 阴历出生日期选择器，按年份提供实际闰月，支持调整时分秒。
+- 输入、命盘、复制与读屏一致显示闰月，支持隐藏出生时间。
 - 公历转农历辅助填写，以及手选农历日和时辰叠宫。
 - 命例、历史、笔记、搜索、备份与恢复。
 - 继续上次命盘，并保留尚未起盘的输入草稿。
 
 ## 安装
 
-在[版本发布页](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.15.0)下载 APK，按 Android 提示安装。最低支持 Android 7.0。升级时直接覆盖安装，以保留本地数据；重要记录建议先导出备份。
+在[版本发布页](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.15.1)下载 APK，按 Android 提示安装。最低支持 Android 7.0。升级时直接覆盖安装，以保留本地数据；重要记录建议先导出备份。
 
 应用无需联网权限。卸载会删除应用内的本地记录，请提前备份。
 
