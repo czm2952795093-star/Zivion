@@ -34,3 +34,14 @@ java -cp "tests/classes;tests/json-20240303.jar" BirthDateTextTest
 ```
 
 预期PASS21，覆盖闰月标记及前缀归一、阴历/公历、秒与输入格式，确认不修改计算结果。4组Android 9交互验证输入切换、选择器填入、隐藏/模式切换/重启、普通和闰月记录；另检查1.3倍字体换行。记录未发生变化。详情见results/0.15.1.json。既有日期/模型测试在本轮沿用历史结果，不计入本轮新测试。
+
+
+## 0.16.0 流曜
+
+编译 `FlowStarState.java`、`FlowState.java` 和 `FlowStarStateTest.java`，使用 org.json 依赖运行：
+
+```powershell
+java -cp "tests/classes;tests/json-20240303.jar" FlowStarStateTest tests/flow-fixtures.json
+```
+
+预期通过48项检查。验证摘要见 `results/0.16.0.json`。

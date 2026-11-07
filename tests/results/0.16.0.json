@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "version": "0.16.0",
+  "regressionChecks": 48,
+  "referenceCombinations": 1440,
+  "android": {
+    "status": "passed",
+    "checks": [
+      "limit before first period explains empty result; annual uses query year; main copy defaults off",
+      "distribution dialog, separate copy, optional full chart copy and year stepping",
+      "active limit and annual both shown; monthly reuses them; copy preference and query survive restart",
+      "natal and copy-off omit flow stars; all existing records unchanged"
+    ],
+    "environment": "Android 9 API 28 offline"
+  },
+  "records": {
+    "saved": {
+      "before": 3,
+      "after": 3,
+      "allPriorRecordsRetained": true
+    },
+    "notes": {
+      "before": 2,
+      "after": 2,
+      "allPriorRecordsRetained": true
+    },
+    "history": {
+      "before": 63,
+      "after": 63,
+      "allPriorRecordsRetained": true
+    }
+  },
+  "apk": {
+    "sha256": "122890bfeb0e8551005014effb579d7dc4d29e768448c52f80052bbef7387a8a",
+    "sameUpgradeSigner": true,
+    "matchesInstalledPackage": true
+  }
+}
