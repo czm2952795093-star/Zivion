@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "version": "0.16.1",
+  "regressionChecks": 48,
+  "android": {
+    "status": "passed",
+    "checks": [
+      "Selected palace panel and dialog show the same annual stars and keep default copy behavior",
+      "Palace and year changes refresh the selected star rows",
+      "Monthly shows both layers, selection restores after restart, natal omits overlays and records survive"
+    ],
+    "environment": "Android 9 API 28 offline"
+  },
+  "records": {
+    "saved": {
+      "before": 3,
+      "after": 3,
+      "allPriorRecordsRetained": true
+    },
+    "notes": {
+      "before": 2,
+      "after": 2,
+      "allPriorRecordsRetained": true
+    },
+    "history": {
+      "before": 63,
+      "after": 63,
+      "allPriorRecordsRetained": true
+    }
+  },
+  "apk": {
+    "sha256": "44707c4595a496d7c33b761ef229e36a61d4a4305d3cb9051344e969cbebd97e",
+    "sameUpgradeSigner": true,
+    "matchesInstalledPackage": true
+  }
+}

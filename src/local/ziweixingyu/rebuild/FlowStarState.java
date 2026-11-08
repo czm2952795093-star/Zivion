@@ -31,6 +31,15 @@ public final class FlowStarState {
   return result;
  }
  public static String names(String symbols){StringBuilder text=new StringBuilder();for(int i=0;i<symbols.length();i++){int at=SYMBOLS.indexOf(symbols.charAt(i));if(at<0)continue;if(text.length()>0)text.append("、");text.append(NAMES[at]);}return text.length()==0?"—":text.toString();}
+ public static String palaceDetail(JSONObject state,String branch){
+  if(state==null||branch==null||branch.length()!=1||FlowState.BRANCH.indexOf(branch)<0)return "";
+  JSONObject limit=state.optJSONObject("limit");
+  JSONObject annual=state.optJSONObject("annual");
+  StringBuilder detail=new StringBuilder();
+  if(limit!=null)detail.append("\n限曜：").append(names(limit.optJSONObject("palaces").optString(branch)));
+  if(annual!=null)detail.append("\n年曜：").append(names(annual.optJSONObject("palaces").optString(branch)));
+  return detail.toString();
+ }
  public static String summary(JSONObject state)throws JSONException{
   if(state.optInt("mode")==0)return "本命模式未启用限年流曜。";
   JSONObject limit=state.optJSONObject("limit"),annual=state.optJSONObject("annual");StringBuilder out=new StringBuilder("限年流曜分布\n");

@@ -2,9 +2,9 @@
 
 Zivion 是一款 Android 紫微排盘与命盘记录应用，支持离线排盘、分层查询、日期换算和本地资料管理。
 
-当前版本：**0.16.0 · 测试版**
+当前版本：**0.16.1 · 测试版**
 
-[下载安装包](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.16.0) · [使用说明](docs/USAGE.md) · [更新记录](CHANGELOG.md) · [功能进展](docs/STATUS.md)
+[下载安装包](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.16.1) · [使用说明](docs/USAGE.md) · [更新记录](CHANGELOG.md) · [功能进展](docs/STATUS.md)
 
 ## 主要功能
 
@@ -19,7 +19,7 @@ Zivion 是一款 Android 紫微排盘与命盘记录应用，支持离线排盘�
 
 ## 安装
 
-在[版本发布页](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.16.0)下载 APK，按 Android 提示安装。最低支持 Android 7.0。升级时直接覆盖安装，以保留本地数据；重要记录建议先导出备份。
+在[版本发布页](https://github.com/czm2952795093-star/Zivion/releases/tag/v0.16.1)下载 APK，按 Android 提示安装。最低支持 Android 7.0。升级时直接覆盖安装，以保留本地数据；重要记录建议先导出备份。
 
 应用无需联网权限。卸载会删除应用内的本地记录，请提前备份。
 
