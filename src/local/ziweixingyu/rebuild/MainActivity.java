@@ -72,7 +72,7 @@ public class MainActivity extends Activity {
  void showNotes(){new RecordBrowser(this,"notes","笔记记录").show();}
  void editNote(int index){retainDraft();JSONArray a=array("notes");JSONObject n=index>=0?a.optJSONObject(index):new JSONObject();LinearLayout box=column();box.setPadding(dp(20),0,dp(20),0);EditText title=edit(n.optString("title",topic),"笔记标题 / 星曜组合",InputType.TYPE_CLASS_TEXT);box.addView(title);EditText body=edit(n.optString("body"),"输入笔记内容",InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_FLAG_MULTI_LINE);body.setSingleLine(false);body.setMinLines(5);body.setGravity(Gravity.TOP);box.addView(body);
   AlertDialog.Builder b=new AlertDialog.Builder(this).setTitle(index<0?"新增笔记":"编辑笔记").setView(box).setNegativeButton("取消",null).setPositiveButton("保存",null);if(index>=0)b.setNeutralButton("删除",(d,w)->new AlertDialog.Builder(this).setTitle("删除这条笔记？").setNegativeButton("取消",null).setPositiveButton("删除",(dd,ww)->{a.remove(index);prefs.edit().putString("notes",a.toString()).apply();showNotes();}).show());AlertDialog dialog=b.create();dialog.setOnShowListener(d->dialog.getButton(-1).setOnClickListener(v->{if(body.getText().toString().trim().isEmpty()){body.setError("请输入笔记内容");return;}try{RecordPolicy.note(title.getText().toString(),body.getText().toString());n.put("title",title.getText().toString());n.put("body",body.getText().toString());JSONArray updated;if(index<0)updated=RecordPolicy.insert(a,n,false);else{a.put(index,n);updated=a;}prefs.edit().putString("notes",updated.toString()).apply();dialog.dismiss();toast("笔记已保存");if(screen.equals("notes"))showNotes();}catch(Exception e){message("保存失败",e.toString());}}));dialog.show();}
- void showChart(){palaceDetail=null;screen="chart";root=column();root.setBackgroundColor(Color.WHITE);setContentView(root);ScrollView sc=new ScrollView(this);LinearLayout content=column();sc.addView(content);root.addView(sc);ChartView cv=new ChartView();content.addView(cv,new LinearLayout.LayoutParams(-1,dp(473)));flow.attach(content,cv);String subtitle=prefs.getString("subtitle","");if(!subtitle.isEmpty()){TextView sub=text(subtitle,15,INK);sub.setPadding(dp(6),dp(4),dp(6),dp(4));content.addView(sub);}palaceDetail=text("点击宫位查看四化，再点查看星曜详情。",13,INK);palaceDetail.setPadding(dp(5),dp(7),dp(5),dp(12));content.addView(palaceDetail);updatePalaceDetail();}
+ void showChart(){palaceDetail=null;screen="chart";root=column();root.setBackgroundColor(Color.WHITE);setContentView(root);ScrollView sc=new ScrollView(this);LinearLayout content=column();sc.addView(content);root.addView(sc);ChartView cv=new ChartView();content.addView(cv,new LinearLayout.LayoutParams(-1,dp(ChartView.BASE_HEIGHT)));flow.attach(content,cv);String subtitle=prefs.getString("subtitle","");if(!subtitle.isEmpty()){TextView sub=text(subtitle,15,INK);sub.setPadding(dp(6),dp(4),dp(6),dp(4));content.addView(sub);}palaceDetail=text("点击宫位查看四化，再点查看星曜详情。",13,INK);palaceDetail.setPadding(dp(5),dp(7),dp(5),dp(12));content.addView(palaceDetail);updatePalaceDetail();}
  void updatePalaceDetail(){
   if(palaceDetail==null)return;
   JSONObject palace=chart==null?null:chart.optJSONObject("十二宫信息").optJSONObject(selectedPalace);
@@ -95,10 +95,46 @@ public class MainActivity extends Activity {
  @Override public void onDestroy(){engine.close();super.onDestroy();}
 
  class ChartView extends View {
+  static final int BASE_HEIGHT=473;
+  static final int FLOW_STAR_ROW_SPACE=34;
   final int[] gx={2,1,0,0,0,0,1,2,3,3,3,3},gy={3,3,3,2,1,0,0,0,0,1,2,3};
   final Paint p=new Paint(3);final RectF[] cells=new RectF[12];int selected=-1;float cw,ch,left,top;
   RectF inputBox,moreBox,copyBox,flowBox;float downX,downY;
   ChartView(){super(MainActivity.this);selected=Arrays.asList(BRANCH).indexOf(selectedPalace);setContentDescription("紫微十二宫命盘，点击宫位查看四化，再点查看详情");setClickable(true);}
+  boolean showsFlowStars(){
+   return flow.mode>0&&flow.stars!=null&&prefs.getBoolean("chartFlowStars",false)
+    &&(flow.stars.has("limit")||flow.stars.has("annual"));
+  }
+  void updateFlowStarLayout(){
+   int height=dp(BASE_HEIGHT+(showsFlowStars()?4*FLOW_STAR_ROW_SPACE:0));
+   android.view.ViewGroup.LayoutParams params=getLayoutParams();
+   if(params.height!=height){params.height=height;setLayoutParams(params);}
+   invalidate();
+  }
+  void drawFlowStarRow(Canvas canvas,RectF cell,JSONObject layer,String branch,String prefix,int baseline,int color){
+   if(layer==null)return;
+   String symbols=layer.optJSONObject("palaces").optString(branch);
+   if(symbols.isEmpty())return;
+   String text=prefix+" "+symbols;
+   p.setTypeface(Typeface.DEFAULT_BOLD);
+   p.setTextSize(dp(8));
+   float available=cell.width()-dp(6);
+   if(available<=0)return;
+   float size=8*Math.min(1f,available/p.measureText(text));
+   float y=cell.top+dp(baseline);
+   p.setStyle(Paint.Style.FILL);
+   p.setColor(0xfff5f7fa);
+   canvas.drawRect(cell.left+dp(2),y-dp(8),cell.right-dp(2),y+dp(2),p);
+   label(canvas,text,cell.left+dp(3),y,size,color,true);
+  }
+  void drawFlowStars(Canvas canvas){
+   if(!showsFlowStars())return;
+   JSONObject limit=flow.stars.optJSONObject("limit"),annual=flow.stars.optJSONObject("annual");
+   for(int i=0;i<12;i++){
+    drawFlowStarRow(canvas,cells[i],limit,BRANCH[i],"限曜",67,TEAL);
+    drawFlowStarRow(canvas,cells[i],annual,BRANCH[i],"年曜",78,BLUE);
+   }
+  }
   void label(Canvas c,String s,float x,float y,float size,int color,boolean bold){p.setStyle(Paint.Style.FILL);p.setColor(color);p.setTextSize(dp(size));p.setTypeface(bold?Typeface.DEFAULT_BOLD:Typeface.DEFAULT);c.drawText(s,x,y,p);}
   void centered(Canvas c,String s,float x,float y,float size,int color,boolean bold){p.setTextSize(dp(size));p.setTypeface(bold?Typeface.DEFAULT_BOLD:Typeface.DEFAULT);label(c,s,x-p.measureText(s)/2,y,size,color,bold);}
   int transformColor(String s){return s.equals("禄")?0xff388934:s.equals("权")?0xffad00ac:s.equals("科")?0xff1681ef:Color.RED;}
@@ -126,6 +162,7 @@ public class MainActivity extends Activity {
     label(c,a.optString("宫干"),x+cw-dp(13),y+ch-dp(17),11,INK,true);label(c,BRANCH[i],x+cw-dp(13),y+ch-dp(4),11,INK,true);if(flow.dayHour!=null){label(c,"日"+flow.dayHour.optJSONObject("dayPalaces").optString(BRANCH[i]),x+dp(2),y+ch-dp(61),9,0xff7538a8,true);label(c,"时"+flow.dayHour.optJSONObject("hourPalaces").optString(BRANCH[i]),x+dp(44),y+ch-dp(61),9,0xff16777a,true);}String layer=flow.mode==3&&flow.annual!=null?flow.annual.optJSONObject("palaces").optString(BRANCH[i]):flow.overlay(BRANCH[i]);if(flow.decadal!=null){String limit=flow.decadal.optJSONObject("palaces").optString(BRANCH[i]);if(!limit.isEmpty())label(c,"限"+limit,x+dp(2),y+ch-dp(48),9,TEAL,true);}if(!layer.isEmpty())label(c,(flow.mode==3?"年":flow.prefix())+layer,x+dp(flow.decadal==null?26:44),y+ch-dp(48),9,flow.mode==1?TEAL:BLUE,true);if(flow.mode==3&&flow.data!=null){label(c,"月"+flow.overlay(BRANCH[i]),x+dp(2),y+ch-dp(35),9,0xff8b398f,true);JSONObject monthInfo=flow.data.optJSONObject("monthMap").optJSONObject(BRANCH[i]);label(c,monthInfo.optString("name")+monthInfo.optString("stem"),x+dp(45),y+ch-dp(35),8,0xffa65a00,false);}c.restore();
    }
    drawFlow(c);
+   drawFlowStars(c);
    float center=left+2*cw,x=left+cw+dp(12),y=top+ch+dp(16);float fs=Math.min(10,cw/dp(1)/9f);
    centered(c,"紫微星语",center,y,16,INK,true);y+=dp(10);centered(c,"独立排盘 · 验证版",center,y,7,INK,false);y+=dp(10);
    label(c,"事项: "+(chartTopic.length()>5?chartTopic.substring(0,5)+"…":chartTopic),x,y,fs,INK,false);centered(c,info.optString("性别")+" "+info.optString("五行局"),center+dp(25),y,11,INK,true);y+=dp(15);

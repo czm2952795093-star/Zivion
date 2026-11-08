@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "version": "0.16.2",
+  "regressionChecks": 48,
+  "android": {
+    "status": "passed",
+    "checks": [
+      "Overlay is off by default and can be shown in monthly mode",
+      "Limit and year star rows coexist with day/hour overlays and transformation marks",
+      "Display preference survives restart, respects natal mode, and can be disabled"
+    ],
+    "environment": "Android 9 API 28 offline"
+  },
+  "records": {
+    "saved": {
+      "before": 3,
+      "after": 3,
+      "allPriorRecordsRetained": true
+    },
+    "notes": {
+      "before": 2,
+      "after": 2,
+      "allPriorRecordsRetained": true
+    },
+    "history": {
+      "before": 63,
+      "after": 63,
+      "allPriorRecordsRetained": true
+    }
+  },
+  "apk": {
+    "sha256": "ac1f4b9c17b58acea2e20816bb3a051faa3fd0d95f3e904381f82afbb2c7e689",
+    "sameUpgradeSigner": true,
+    "matchesInstalledPackage": true
+  }
+}
